@@ -317,7 +317,7 @@ body {
 
   
 .containerHeader {
-	height: 25vh;
+	height: 20vh;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -330,9 +330,9 @@ body {
 .lead { font-family: 'Quicksand'; }
 .header-bar {
 	position: relative;
-	width: 50%;
+	width: 60%; /* change from 50 to 60 */
 	min-width: 600px;
-  top: 5%;
+    top: 5%;
 	height: 50px;
 	border: 10px solid transparent;
 	border-top: 10px solid #fffa;
@@ -448,14 +448,14 @@ body {
 }
 
 .h2Credit{
+    color: violet;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    
 }
 
 .h3Credit {
-    font-size: 1rem;
+    font-size: 2rem;
     color:teal;
     
     
