@@ -149,7 +149,7 @@ return "rotate(" + i(t) + ")";
 
 
 
-const form = document.querySelector('form')
+const form = document.querySelector('#rsvp')
 const firstNameInput = document.querySelector('#first-name')
 const lastNameInput = document.querySelector('#last-name')
 const phoneInput = document.querySelector('#phone-number')
@@ -163,7 +163,7 @@ alert('You must enter your first name.')
 return
 }
 
-let userRSVP = document.querySelector('input[class="field__input"]:filled').value
+let userRSVP = document.querySelector('input[class="submit"]:clicked').value
 let body = {
 firstName : firstNameInput.value,
 lastName : lastNameInput.value,
