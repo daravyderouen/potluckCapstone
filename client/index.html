@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Daravy's Potluck Capstone</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<div class="containerHeader">
+    <p class="lead">A quick fix to solving dinner problems!</p>
+    <div class="header-bar">
+        <h1 class="logo">POTLUCK GENERATOR</h1>
+        <ul class="slider-menu">
+            <li style="cursor:pointer;"><a href='index.html';" target="_blank">HOME</a></li>
+            <li style="cursor:pointer;"><a href='about.html';" target="_blank">ABOUT</a></li>
+            <li style="cursor:pointer;"><a href='credits.html';" target="_blank">CREDITS</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--p class="aeu-signature">💕.</p-->
+
+<body>
+
+<!--div class="header">
+    <h2>Potluck Generator</h2>
+</div--> 
+
+<div id="question">
+    <h1>Click spin!</h1>
+</div>
+
+<div id="chart"></div>
+
+
+
+
+
+<form>
+<div class="page"><h3 class="form">Please RSVP!</h3>
+    
+    <label class="field field_v1">
+        <input class="field__input" placeholder="e.g. Daravy" id="first-name">
+        <span class="field__label-wrap">
+        <span class="field__label">First name</span>
+          </span>
+    </label>
+    <label class="field field_v2">
+        <input class="field__input" placeholder="e.g. DeRouen" id="last-name">
+        <span class="field__label-wrap">
+        <span class="field__label">Last name</span>
+          </span>
+    </label>    
+    <label class="field field_v3">
+        <input class="field__input" placeholder="e.g. (999) 000-0000" id="phone-number">
+        <span class="field__label-wrap">
+        <span class="field__label">Phone Number</span>
+        </span>
+        </label>
+        <!--h4>Will you be attending?</h4>
+        <div class="radio">
+            <label for="rsvp-yes">YES</label>
+            <input type="radio" name="rating" value="1" id="rsvp-yes" checked="true"/>
+        </div>
+
+        <div class="radio">
+            <label for="rating-two">NO</label>
+            <input type="radio" name="rating" value="2" id="rsvp-no"/>
+        </div-->
+        <label class="field field_v4">
+            <input class="field__input" placeholder="e.g. Mac & Cheese" id="dish-selected">
+            <span class="field__label-wrap">
+            <span class="field__label">Dish Selected</span>
+            </span>
+            </label>
+
+            <input type="submit" value="SUBMIT">
+        
+      </div>
+    </form>
+    
+
+
+
+
+
+
+    <div class="wrapper">
+        <h1 class="footerH1">Recipe Cards</h1>  
+        <div class="cols">
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/spaghetti2.jpg)">
+                              <div class="inner">
+                                  <p>Spaghetti</p>
+                    <span>Classic Meat Sauce Recipe</span>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                <p>
+                                    <ul class="footerUL">
+                                        <li>ground beef</li>
+                                        <li>Prego traditional sauce</li>
+                                        <li>2 cloves of garlic</li>
+                                        <li>1 onion</li>
+                                        <li>Spaghetti noodles</li>
+                                        <li style="cursor:pointer;"><a href='https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/';" target="_blank"> Spaghetti Recipe</a></li>
+                                    </ul>
+
+                                    </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/mac_and_cheese.jpg);">
+                              <div class="inner">
+                                  <p>Mac & Cheese</p>
+                    <span>The Classic</span>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>
+                                      <ul class="footerUL">
+                                          <li>8 ounces uncooked elbow macaroni</li>
+                                          <li>2 cups shredded sharp Cheddar cheese</li>
+                                          <li>½ cup grated Parmesan cheese </li>
+                                          <li>3 cups milk</li>
+                                          <li>¼ cup butter</li>
+                                          <li>2 ½ tablespoons all-purpose flour </li>
+                                          <li>2 tablespoons butter</li>
+                                          <li>½ cup bread crumbs</li>
+                                          <li>1 pinch paprika</li>
+                                          <li style="cursor:pointer;"><a href='https://www.allrecipes.com/recipe/11679/homemade-mac-and-cheese/';" target="_blank"> Mac & Cheese Recipe</a></li>
+                                      </ul>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/green_bean_casserole.jpg)">
+                              <div class="inner">
+                                  <p>Green Bean Casserole</p>
+                    <span>Southern Must Have</span>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>
+                                      <ul class="footerUL">
+                                          <li>1 lb. green beans, trimmed</li>
+                                          <li>6 tbsp. butter, divided</li>
+                                          <li>1 onion, sliced into half moons</li>
+                                          <li>8 oz. sliced mushrooms</li>
+                                          <li>Freshly ground black pepper</li>
+                                          <li>2 cloves garlic, minced</li>
+                                          <li>1/4 c. all-purpose flour</li>
+                                          <li>3 c. whole milk</li>
+                                          <li>1 1/2 c. French's fried onions</li>
+                                          <li style="cursor:pointer;"><a href='https://www.delish.com/holiday-recipes/thanksgiving/a55340/easy-homemade-classic-green-bean-casserole-recipe/';" target="_blank"> Green Bean Casserole Recipe</a></li>
+                                      </ul>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/pepper_jelly_meatballs.jpg)">
+                              <div class="inner">
+                                  <p>Pepper Jelly Meatballs</p>
+                    <span>Best tailgating appetizer!</span>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>
+                                    <ul class="footerUL">
+                                        <li>1 (12-ounce) jar chili sauce</li>
+                                        <li>1 (12 ounce) can jellied cranberry sauce</li>
+                                        <li>1 (10.5-ounce) jar Red Pepper Jelly</li>
+                                        <li>2 tablespoons brown sugar</li>
+                                        <li>few shakes hot sauce</li>
+                                        <li>▢1 (32-ounce) bag Frozen Meatballs</li>
+                                        <li style="cursor:pointer;"><a href='https://spicysouthernkitchen.com/crock-pot-cranberry-meatballs-2/';" target="_blank"> Pepper Jelly Meatballs Recipe</a></li>
+                                    </ul> 
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/ham_and_cheese_sliders.jpg)">
+                              <div class="inner">
+                                  <p>Ham & Cheese Sliders</p>
+                    <span>The Classic: Grown up Style</span>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>
+                                    <ul class="footerUL">
+                                        <li>12 Hawaiian style rolls</li>
+                                        <li>3/4 lb deli ham (thinly sliced)</li>
+                                        <li>1/2 lb swiss cheese (sliced)</li>
+                                        <li>6 tablespoons butter (melted)</li>
+                                        <li>2 teaspoons Dijon mustard</li>
+                                    </ul>
+                                </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/jambalaya.jpg)">
+                              <div class="inner">
+                                  <p>Jambalaya</p>
+                    <span>A Cajun Favorite</span>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>
+                                    <ul class="footerUL">
+                                        <li>1 (12-ounce) jar chili sauce</li>
+                                        <li>1 (12 ounce) can jellied cranberry sauce</li>
+                                        <li>1 (10.5-ounce) jar Red Pepper Jelly</li>
+                                        <li>2 tablespoons brown sugar</li>
+                                        <li>few shakes hot sauce</li>
+                                        <li>▢1 (32-ounce) bag Frozen Meatballs</li>
+                                        <li style="cursor:pointer;"><a href='';" target="_blank"> Jambalaya Recipe</a></li>
+                                    </ul> 
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/chicken_pot_pie2.jpg)">
+                              <div class="inner">
+                                  <p>Chicken Pot Pie</p>
+                    <span>Wholesome Meal-in-One</span>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>
+                                    <ul class="footerUL">
+                                        <li>1 box Pillsbury Pie Crust</li>
+                                        <li>1/3 cup butter or margarine</li>
+                                        <li>1/3 cup chopped onion</li>
+                                        <li>1/3 cup all-purpose flour</li>
+                                        <li>1/2 teaspoon salt</li>
+                                        <li>1/4 teaspoon pepper</li>
+                                        <li>1 3/4 cups Progresso chicken </li>
+                                        <li>1/2 cup milk</li>
+                                        <li>2 1/2cups shredded chicken</li>
+                                        <li>2 cups mixed vegetables</li>
+                                        <li style="cursor:pointer;"><a href='https://www.pillsbury.com/recipes/classic-chicken-pot-pie/1401d418-ac0b-4b50-ad09-c6f1243fb992';" target="_blank"> Chicken Pot Pie Recipe</a></li>
+                                    </ul> 
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" style="background-image: url(images/piggy_in_the_blanket.jpg)">
+                            <div class="inner">
+                                <p>Piggy In The Blanket</p>
+                  <span>Everybody's Childhood Favorite</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>
+                                    <ul class="footerUL">
+                                        <li>1 (12-ounce) jar chili sauce</li>
+                                        <li>1 (12 ounce) can jellied cranberry sauce</li>
+                                        <li>1 (10.5-ounce) jar Red Pepper Jelly</li>
+                                        <li>2 tablespoons brown sugar</li>
+                                        <li>few shakes hot sauce</li>
+                                        <li>▢1 (32-ounce) bag Frozen Meatballs</li>
+                                        <li style="cursor:pointer;"><a href='';" target="_blank"> Piggy In The Blanket Recipe</a></li>
+                                    </ul> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" style="background-image: url(images/spring_rolls.jpg)">
+                            <div class="inner">
+                                <p>Spring Rolls</p>
+                  <span>Flavorful Healthy Option</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>
+                                    <ul class="footerUL">
+                                        <li>1 (12-ounce) jar chili sauce</li>
+                                        <li>1 (12 ounce) can jellied cranberry sauce</li>
+                                        <li>1 (10.5-ounce) jar Red Pepper Jelly</li>
+                                        <li>2 tablespoons brown sugar</li>
+                                        <li>few shakes hot sauce</li>
+                                        <li>▢1 (32-ounce) bag Frozen Meatballs</li>
+                                        <li style="cursor:pointer;"><a href='';" target="_blank"> Spring Rolls Recipe</a></li>
+                                    </ul> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/crawfish_etouffee.jpg)">
+                              <div class="inner">
+                                  <p>Crawfish Etouffee</p>
+                    <span>Finger Licking Good!</span>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>
+                                    <ul class="footerUL">
+                                        <li>1 (12-ounce) jar chili sauce</li>
+                                        <li>1 (12 ounce) can jellied cranberry sauce</li>
+                                        <li>1 (10.5-ounce) jar Red Pepper Jelly</li>
+                                        <li>2 tablespoons brown sugar</li>
+                                        <li>few shakes hot sauce</li>
+                                        <li>▢1 (32-ounce) bag Frozen Meatballs</li>
+                                        <li style="cursor:pointer;"><a href='';" target="_blank"> Crawfish Etouffee Recipe</a></li>
+                                    </ul> 
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+       </div>  
+       
+    
+<footer>       
+</footer>
+
+
+<script src="../node_modules/axios/dist/axios.min.js"/></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="./index.js"></script>
+
+</body>
+</html>
