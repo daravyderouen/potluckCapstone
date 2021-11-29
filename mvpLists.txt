@@ -1,0 +1,12 @@
+Potluck Capstone MVP lists:
+
+1. Functional Navigation Bar with buttons: Home, About, Credits
+2. Spinning dish wheel
+3. RSVP form
+4. Turning recipe cards with full recipe links
+5. About page:
+    a. functional navigation Bar
+    b. responsive image 
+    c. buttons to links on image
+6. Credit page:
+    
