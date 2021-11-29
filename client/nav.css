@@ -43,7 +43,7 @@
 
 .img-wrapper img
 {
-	height: 500px;
+	height: 400px;
 	width: 300px;
 	filter: grayscale(100%);
 	transition: 2s;
@@ -437,4 +437,10 @@ body {
 
 #columnCSS {
       justify-content: center;
+      align-items: left;
+      left: 10%;
   }
+
+.column{
+    text-align: center;
+}
