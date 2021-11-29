@@ -410,7 +410,8 @@ body {
 
 .logo-about{
   background-color: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  display: flex;
   position: left;
   justify-content: left;
 
@@ -432,4 +433,8 @@ body {
   ::-webkit-scrollbar {
       width: 0px;
       background: transparent; /* make scrollbar transparent */
+  }
+
+  #columnCSS {
+      justify-content: center;
   }
