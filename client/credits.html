@@ -66,8 +66,16 @@
         width: 100%;
       }
     }
-    ul {padding-left:5px}
-    li {padding-left:5px}
+    ul li{
+        padding-left:5px
+    }
+    
+    ul li:before {
+    content: "\2665 020";
+    color: #9c5597;
+    }
+
+
     </style>
 <body>
     
@@ -78,7 +86,12 @@
 </div>
 
 <div class="row">
-    <div class="column" style="background-color:rgb(201, 198, 198);"><h3 class="h3Credit">HTML Resources:</h3></div>
+    <div class="column" style="background-color:rgb(201, 198, 198);"><h3 class="h3Credit">HTML & JavaScript Resources:</h3></div>
+    <ul class="ulCredit">
+        <li style="cursor:pointer;"><a href='https://workshops.hackclub.com/spinning_wheel/';" target="_blank">Spin Wheel Link</a></li>
+    </ul>
+
+    https://workshops.hackclub.com/spinning_wheel/
     
     <div class="column" id="columnCSS" style="background-color:rgb(201, 198, 198);"><h3 class="h3Credit">CSS Resources:</h3>
         <ul class="ulCredit">
