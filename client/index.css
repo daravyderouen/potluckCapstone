@@ -538,7 +538,7 @@
   }
   .header-bar > .logo {
       position: absolute;
-    font-size: 3rem;
+    font-size: 2rem;
       top: calc(100% - 5px);
       left: 10px;
       transform: translateY(-50%);
