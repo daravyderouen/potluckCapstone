@@ -410,7 +410,7 @@ body {
 
 .logo-about{
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   position: left;
   justify-content: left;
@@ -435,6 +435,6 @@ body {
       background: transparent; /* make scrollbar transparent */
   }
 
-  #columnCSS {
+#columnCSS {
       justify-content: center;
   }
