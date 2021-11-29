@@ -1,4 +1,5 @@
 
+*
 {
 	background: transparent;
 	margin: 0;
@@ -15,7 +16,7 @@
 
 .img-wrapper
 {
-	width: 30%;
+	width: 300px;
 	height: 500px;
 	position: relative;
 	overflow: hidden;
@@ -42,7 +43,7 @@
 
 .img-wrapper img
 {
-	height: 400px;
+	height: 500px;
 	width: 300px;
 	filter: grayscale(100%);
 	transition: 2s;
@@ -256,7 +257,7 @@ body {
     position: absolute;
   }
   
-  /*@media (min-width: 600px) { */
+  @media (min-width: 600px) {
     
     .wrapper {
       grid-template-columns: repeat(2, 1fr 2fr);
@@ -308,7 +309,7 @@ body {
       grid-column: 4 / 5;
     }
     
-  
+  }
 
   .aboutP {
       font-size: 1.5rem;
@@ -421,7 +422,7 @@ body {
 }
 
    /* Hide scrollbar for Chrome, Safari and Opera */
-   .scrollbar-hidden::-webkit-scrollbar {
+  .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }
   html {
@@ -431,4 +432,3 @@ body {
       width: 0px;
       background: transparent; /* make scrollbar transparent */
   }
-
