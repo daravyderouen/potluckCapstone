@@ -1,5 +1,4 @@
 
-*
 {
 	background: transparent;
 	margin: 0;
@@ -43,7 +42,7 @@
 
 .img-wrapper img
 {
-	height: 30%;
+	height: 400px;
 	width: 300px;
 	filter: grayscale(100%);
 	transition: 2s;
@@ -309,7 +308,7 @@ body {
       grid-column: 4 / 5;
     }
     
-  /*} */
+  
 
   .aboutP {
       font-size: 1.5rem;
@@ -317,7 +316,6 @@ body {
 
   
 .containerHeader {
-    width: 100%;
 	height: 25vh;
 	display: flex;
 	justify-content: center;
