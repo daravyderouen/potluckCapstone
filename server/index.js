@@ -1,4 +1,5 @@
 require('dotenv').config()
+const port = process.env.PORT || 4000
 const express = require('express')
 const path = require('path')
 const cors = require('cors')
@@ -46,7 +47,6 @@ app.get("/index.css", (req, res) => {
 
 //app.delete('/guests/:id', deleteGuest)
 
-const port = process.env.PORT || 4000
 
 //app.use(rollbar.errorHandler());
 
@@ -57,5 +57,5 @@ const port = process.env.PORT || 4000
 
 
 app.listen(port, () => {  
-    console.log(`My server is on ${port}`)
+    console.log(`My server is on fiya ${port}`)
 })

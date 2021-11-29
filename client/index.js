@@ -1,7 +1,7 @@
 
 var padding = {top:20, right:50, bottom:0, left:0},
-w = 600 - padding.left - padding.right,
-h = 600 - padding.top  - padding.bottom,
+w = 700 - padding.left - padding.right,
+h = 700 - padding.top  - padding.bottom,
 r = Math.min(w, h)/2,
 rotation = 0,
 oldrotation = 0,
