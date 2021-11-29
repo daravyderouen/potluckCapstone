@@ -1,4 +1,4 @@
-
+@media only screen and (max-width: 600px) and (min-width: 400px)  {
 *
 {
 	background: transparent;
@@ -432,3 +432,5 @@ body {
       width: 0px;
       background: transparent; /* make scrollbar transparent */
   }
+
+}
