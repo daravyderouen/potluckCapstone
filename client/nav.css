@@ -414,6 +414,7 @@ body {
   display: flex;
   position: left;
   justify-content: left;
+  align-content: center;
 
 }
 
@@ -443,4 +444,17 @@ body {
 
 .column{
     text-align: center;
+}
+
+.h2Credit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.h3Credit {
+    font-size: 1.2rem;
+    color: violet;
+    
 }
