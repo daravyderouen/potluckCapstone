@@ -43,7 +43,7 @@
 
 .img-wrapper img
 {
-	height: 400px;
+	height: 500px;
 	width: 300px;
 	filter: grayscale(100%);
 	transition: 2s;
@@ -235,7 +235,7 @@ body {
     border-radius: 130px;
     color: white;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 150px;
+    font-size: 100px;
     height: 130px;
     line-height: 130px;
     position: absolute;
@@ -414,7 +414,7 @@ body {
   display: flex;
   position: left;
   justify-content: left;
-  align-content: center;
+  align-self: center;
 
 }
 
@@ -444,6 +444,7 @@ body {
 
 .column{
     text-align: center;
+    border: 2px violet dotted;
 }
 
 .h2Credit{
@@ -454,7 +455,8 @@ body {
 }
 
 .h3Credit {
-    font-size: 1.2rem;
-    color: violet;
+    font-size: 1rem;
+    color:teal;
+    
     
 }
