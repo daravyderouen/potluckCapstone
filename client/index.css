@@ -745,8 +745,8 @@ footer {
 }
   
 .groceryList{
-    height: 25vh;
-    font-size: 2rem;
+    height: 20vh;
+    font-size: 1.5rem;
     background:linear-gradient(-90deg, rgb(252, 168, 221),rgb(248, 126, 211));
     border-bottom: 1px gray solid;
     padding: 20px 20px 30px;
@@ -759,7 +759,7 @@ footer {
     margin-bottom:25px;
   }
 #inputText {
-    font-size: 2.5rem;
+    font-size: 1rem;
    border-radius:2px;
     border: solid gray 2px;
     padding:5px;
@@ -767,7 +767,7 @@ footer {
 }
 .buttonGrocery {
       display:inline-block;
-      font-size: 2rem;
+      font-size: 1rem;
     background-color: rgb(163, 59, 163);
       border: solid grey 2px;
       border-radius:4px;
@@ -793,11 +793,11 @@ li {
     
 li:nth-child(odd){
     /*background-color:#dedede;*/
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 li:nth-child(even){
      /* background-color:#f1f1f1;*/
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 .check {
     text-decoration: line-through;
