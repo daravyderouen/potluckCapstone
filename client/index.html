@@ -37,7 +37,7 @@
 
 
 
-<form action="/" method="GET" id="rsvp">
+<form action="/" method="GET" id="rsvp" @submit.prevent="submitForm">
 <div class="page"><h3 class="form">Please RSVP!</h3>
     
     <label class="field field_v1" for="name">

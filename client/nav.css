@@ -317,6 +317,7 @@ body {
 
   
 .containerHeader {
+  width: 100%;
 	height: 20vh;
 	display: flex;
 	justify-content: center;
@@ -459,3 +460,16 @@ body {
     
     
 }
+
+/* links*/
+a {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.register:link { color:#FFF; text-decoration:none; font-weight:normal; }
+a.register:visited { color: rgb(128, 225, 241); text-decoration:none; font-weight:normal; }
+a.register:hover { color: rgb(241, 79, 193); text-decoration:underline; font-weight:normal; }
+a.register:active { color: #FFF; text-decoration:none; font-weight:normal; }

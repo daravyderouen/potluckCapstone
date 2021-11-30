@@ -1,7 +1,7 @@
 
 var padding = {top:20, right:50, bottom:0, left:0},
-w = 550 - padding.left - padding.right,
-h = 550 - padding.top  - padding.bottom,
+w = 650 - padding.left - padding.right,
+h = 650 - padding.top  - padding.bottom,
 r = Math.min(w, h)/2,
 rotation = 0,
 oldrotation = 0,
@@ -248,7 +248,7 @@ function addToList() {
   
   
   
-    
+
    
 
 
