@@ -411,6 +411,7 @@ body {
 .logo-about{
   background-color: transparent;
   font-size: 2rem;
+  display: flex;
   position: left;
   justify-content: left;
   align-self: center;

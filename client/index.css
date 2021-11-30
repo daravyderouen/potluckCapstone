@@ -30,7 +30,7 @@
       /*position:absolute;*/
       width:40%;
       height:700px;
-      top: 35%;
+      top: 45%;
       left:20%;
   }
   #question{
@@ -62,7 +62,7 @@
       border: 2px solid #FFECFF;
       background-color: violet;
       border-radius: 15px;
-      position: fixed;
+      position: absolute;
       top: 35%;
       left: 70%;
       fill-opacity: .5;
