@@ -1,7 +1,7 @@
 
 var padding = {top:20, right:50, bottom:0, left:0},
-w = 450 - padding.left - padding.right,
-h = 450 - padding.top  - padding.bottom,
+w = 550 - padding.left - padding.right,
+h = 550 - padding.top  - padding.bottom,
 r = Math.min(w, h)/2,
 rotation = 0,
 oldrotation = 0,
@@ -146,7 +146,7 @@ return "rotate(" + i(t) + ")";
 
 
 
-
+const baseURL = `http://localhost:4000/guests`
 
 
 const form = document.querySelector('#rsvp')
@@ -164,22 +164,22 @@ return
 }
 
 let userRSVP = document.querySelector('input[class="submit"]:clicked').value
-let body = {
-firstName : firstNameInput.value,
-lastName : lastNameInput.value,
-phoneNumber : phoneInput.value,
-dishSelected : dishSelectedInput.value
+    let body = {
+    firstName : firstNameInput.value,
+    lastName : lastNameInput.value,
+    phoneNumber : phoneInput.value,
+    dishSelected : dishSelectedInput.value
 
 }
 axios.post('http://localhost:4000/guests', body)
-.then(() => {
-firstNameInput.value= ''
-lastNameInput.value = ''
-phoneInput.value = ''
-dishSelectedInput.value = '',
-document.querySelector('#submit') = clicked
-getGuests()
-})
+    .then(() => {
+    firstNameInput.value= ''
+    lastNameInput.value = ''
+    phoneInput.value = ''
+    dishSelectedInput.value = '',
+    document.querySelector('#submit') = clicked
+    getGuests()
+    })
 }
 function getGuests() {
     axios.get('http://localhost:4000/guests') 
@@ -207,6 +207,46 @@ function getGuests() {
 }
 
 
+function addToList() {
+    //get value from input
+    var value = document.getElementById("inputTextGrocery").value;
+    //alert that the text box is empty
+    if (value === "") {
+      alert('To add an item, type its name into the box')
+    }
+    else {
+      //create a list item element
+    var li = document.createElement("li");
+    var textNode = document.createTextNode(value);
+    //append value to list item
+    li.appendChild(textNode);
+    document.getElementById("list").appendChild(li);
+    li.className = "item";
+    //add an X to each list item
+    var close=document.createElement("SPAN");
+    var closeNode =document.createTextNode("X");
+    close.appendChild(closeNode);
+    li.appendChild(close);
+    close.className= "close";
+    };
+  };
+  
+  //have X remove list item on click
+    document.body.addEventListener("click", function(event) {
+      if (event.target.className == "close")
+        event.target.parentElement.style.display="none";
+    });
+  
+  //when an li is clicked toggle class which either adds or removes linethrough
+    document.body.addEventListener("click", function(event) {
+      if (event.target.tagName == "LI")
+        event.target.classList.toggle("check");
+    });
+  
+  
+  
+    
+   
 
 
 form.addEventListener('submit', handleSubmit)  

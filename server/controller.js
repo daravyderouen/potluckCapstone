@@ -20,10 +20,10 @@ module.exports = {
 
 
         create table guests (
-            guest_id serial primary key, 
-            first_name varchar,
-            last_name varchar,
-            phone_number varchar,
+            guest_id SERIAL PRIMARY KEY, 
+            first_name VARCHAR,
+            last_name VARCHAR,
+            phone_number VARCHAR(15),
             dish_selected varchar
         );
 

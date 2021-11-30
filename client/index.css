@@ -28,10 +28,10 @@
       display: flex;
       position: absolute;
       /*position:absolute;*/
-      width:40%;
+      width:50%;
       height:700px;
-      top: 45%;
-      left:20%;
+      top: 35%;
+      left:30%;
   }
   #question{
       display: flex;
@@ -63,7 +63,7 @@
       background-color: violet;
       border-radius: 15px;
       position: absolute;
-      top: 35%;
+      top: 40%;
       left: 70%;
       fill-opacity: .5;
       font-size: 1.5rem;
@@ -298,17 +298,17 @@
       color:teal;
       text-align: center;
       margin: 0rem 0;
-      top: 75%;
+      top: 65%;
     
     }
     
     .wrapper{
-      width: 70%;
+      width: 90%;
       position: relative;
-      margin-top: 15%;
-      margin-left: 5%;
+      margin-top: 10%;
+      margin-left: 19%;
       top: 75%;
-      max-width: 50rem;
+      max-width: 85rem;
     }
     
     .cols{
@@ -485,6 +485,12 @@
     .footerUL {
       font-size: 1.1rem;
       align-items: center;
+    }
+
+    .footerLI {
+        font-size: .5rem;
+        align-items: center;
+        
     }
   
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -725,3 +731,82 @@
       background: rgba(255,255,255,0);
   }
 
+  /* This is the grocery list  */
+
+
+footer {
+    box-sizing:border-box;
+    width: 100%;
+    height: 25vh;
+    justify-content: center;
+}
+  
+.groceryList{
+    height: 20vh;
+    font-size: 2rem;
+    background:linear-gradient(-90deg, #81cad6, #90ff99);
+    border-bottom: 1px gray solid;
+    padding: 20px 20px 30px;
+    margin:auto;
+    text-align:center;
+  }
+.groceryListH2 {
+    text-align:center;
+    color:#fff;
+    margin-bottom:25px;
+  }
+#inputText {
+    font-size: 2.5rem;
+   border-radius:2px;
+    border: solid gray 2px;
+    padding:5px;
+    
+}
+.buttonGrocery {
+      display:inline-block;
+      font-size: 2rem;
+    background-color: gray;
+      border: solid gray 2px;
+      border-radius:4px;
+      color:white;
+      padding:5px;
+}
+
+  
+#list{
+    text-decoration:none;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+li {
+    text-decoration:none;
+    padding: 10px;
+    font-weight:bold;
+    font-size: 2rem;
+    text-align: center;
+}
+    
+li:nth-child(odd){
+    /*background-color:#dedede;*/
+    font-size: 1.5rem;
+  }
+li:nth-child(even){
+     /* background-color:#f1f1f1;*/
+      font-size: 1.5rem;
+    }
+.check {
+    text-decoration: line-through;
+        background-color: black !important;
+        color:white;
+  }
+  
+  
+  span.close {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+  }
+
+  
