@@ -1,7 +1,7 @@
 
 var padding = {top:20, right:50, bottom:0, left:0},
-w = 600 - padding.left - padding.right,
-h = 600 - padding.top  - padding.bottom,
+w = 400 - padding.left - padding.right,
+h = 400 - padding.top  - padding.bottom,
 r = Math.min(w, h)/2,
 rotation = 0,
 oldrotation = 0,
@@ -182,11 +182,11 @@ getGuests()
 })
 }
 function getGuests() {
-axios.get('http://localhost:4000/guests') 
-.then(res => {
-const guest = res.data[0]
+    axios.get('http://localhost:4000/guests') 
+    .then(res => {
+    const guest = res.data[0]
 
-const {
+    const {
     first_name: firstName, 
     last_name: lastName, 
     phone_number: phoneNumber, 

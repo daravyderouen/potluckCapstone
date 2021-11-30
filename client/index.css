@@ -58,11 +58,11 @@
   
   .page{
       width: 15%;
-      height: 600px;
+      height: 500px;
       border: 2px solid #FFECFF;
       background-color: violet;
       border-radius: 15px;
-      position: absolute;
+      position: fixed;
       top: 35%;
       left: 70%;
       fill-opacity: .5;
