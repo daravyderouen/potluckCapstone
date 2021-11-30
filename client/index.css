@@ -259,7 +259,7 @@
     
     .substack{
       border:1px solid #EEE; 
-      background-color: #fff;
+      /*background-color: #fff;*/
       width: 100%;
       max-width: 480px;
       height: 280px;
@@ -292,7 +292,7 @@
     
     .footerH1{
       position: relative;
-      font-size: 5.5rem;
+      font-size: 5rem;
       font-family: 'Montserrat';
       font-weight: normal;
       color:teal;
@@ -303,12 +303,12 @@
     }
     
     .wrapper{
-      width: 90%;
+      width: 70%;
       position: relative;
       margin-top: 15%;
       margin-left: 5%;
       top: 75%;
-      max-width: 85rem;
+      max-width: 50rem;
     }
     
     .cols{
@@ -331,8 +331,8 @@
     .container{
       -webkit-transform-style: preserve-3d;
               transform-style: preserve-3d;
-      -webkit-perspective: 2000px;
-              perspective: 2000px;
+      -webkit-perspective: 1000px;
+              perspective: 1000px;
     }
     
     .front,
