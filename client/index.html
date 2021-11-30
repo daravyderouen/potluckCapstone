@@ -37,23 +37,23 @@
 
 
 
-<form action="/" method="GET" id="rsvp" @submit.prevent="submitForm">
+<form id="rsvp">
 <div class="page"><h3 class="form">Please RSVP!</h3>
     
-    <label class="field field_v1" for="name">
-        <input class="field__input" name = "first-name" placeholder="e.g. Daravy" id="first-name" type="text" required>
+    <label class="field field_v1" for="firstName">
+        <input class="field__input" name = "firstName" placeholder="e.g. Daravy" id="firstName" type="text" required>
         <span class="field__label-wrap">
         <span class="field__label">First name</span>
           </span>
     </label>
-    <label class="field field_v2" for="last-name">
-        <input class="field__input" name ="last-name" placeholder="e.g. DeRouen" id="last-name" type="text" required>
+    <label class="field field_v2" for="lastName">
+        <input class="field__input" name ="lastName" placeholder="e.g. DeRouen" id="lastName" type="text">
         <span class="field__label-wrap">
         <span class="field__label">Last name</span>
           </span>
     </label>    
-    <label class="field field_v3" for="phone-number">
-        <input class="field__input" name="phone-number" placeholder="e.g. (999) 000-0000" id="phone_number" type="text" required>
+    <label class="field field_v3" for="phoneNumber">
+        <input class="field__input" name="phoneNumber" placeholder="e.g. (999) 000-0000" id="phoneNumber" type="text">
         <span class="field__label-wrap">
         <span class="field__label">Phone Number</span>
         </span>
@@ -68,15 +68,15 @@
             <label for="rating-two">NO</label>
             <input type="radio" name="rating" value="2" id="rsvp-no"/>
         </div-->
-        <label class="field field_v4" for="dish-selected">
-            <input class="field__input" name="dish-selected" placeholder="e.g. Mac & Cheese" id="dish-selected" type="text" required>
+        <label class="field field_v4" for="dishSelected">
+            <input class="field__input" name="dishSelected" placeholder="e.g. Mac & Cheese" id="dishSelected" type="text">
             <span class="field__label-wrap">
             <span class="field__label">Dish Selected</span>
             </span>
             </label>
-            <button type="reset">Reset</button>
+            
             <button type="submit" value="SUBMIT" class="submit">SUBMIT</button>
-        
+            <button type="reset">Reset</button>
       </div>
     </form>
     
@@ -291,7 +291,7 @@
 </footer>
 
 
-<script src="../node_modules/axios/dist/axios.min.js"/></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="./index.js"></script>
 

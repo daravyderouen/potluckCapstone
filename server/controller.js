@@ -21,18 +21,18 @@ module.exports = {
 
         create table guests (
             guest_id SERIAL PRIMARY KEY, 
-            first_name VARCHAR,
-            last_name VARCHAR,
-            phone_number VARCHAR(15),
-            dish_selected varchar
+            firstname VARCHAR,
+            lastname VARCHAR,
+            phonenumber VARCHAR(15),
+            dishselected varchar
         );
 
-        insert into guests (first_name, last_name, phone_number, dish_selected)
+        insert into guests (firstname, lastname, phonenumber, dishselected)
         values ('MJ', 'DeRouen', '(888) 443-9090', 'Mac and Cheese'),
             ('Eloise', 'Crabtree', '(777) 889-2323', 'Spaghetti'),
             ('Ryker', 'Dupuy', '(111) 222-3333', 'Ham and Cheese sandwiches')
             ;
-        `).then(() => {
+        `).then(() => {//make sure in the future that in order for sequelizer to work, PG web and console browser properties must all match, better wise to stick to using all lowercase!
             console.log('DB seeded!')
             res.sendStatus(200)
         }).catch(err => console.log('error seeding DB', err))
@@ -46,24 +46,22 @@ module.exports = {
     },
 
     createGuest: (req, res) => {
+        console.log(req.body)
         let {
-            firstName,
-            lastName,
-            phoneNumber,
-            dishSelected,
+            firstname,
+            lastname,
+            phonenumber,
+            dishselected
             
         } = req.body;
+        
 
         sequelize
             .query(
-                `insert into guests  
-        first_name = '${firstName}',
-        last_name = '${lastName}',
-        phone_number = '${phoneNumber}',
-        dish_selected = ${dishSelected}
-        `
-            )
-            .then(() => res.sendStatus(200))
+                `insert into guests (firstname, lastname, phonenumber, dishselected)
+                values ('${firstname}', '${lastname}', '${phonenumber}', '${dishselected}');
+                `)
+            .then((dbRes) => res.sendStatus(200))
             .catch((err) => console.log(err));
     },
     deleteGuest: (req, res) => {
