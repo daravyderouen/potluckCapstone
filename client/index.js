@@ -69,11 +69,14 @@ function spin(d){
 container.on("click", null);
 //all slices have been seen, all done
 console.log("OldPick: " + oldpick.length, "Data label: " + data.length);
+
 if(oldpick.length == data.length){
     console.log("done");
     container.on("click", null);
+       
     return;
 }
+
 var  ps       = 360/data.length,
      pieslice = Math.round(1440/data.length),
      rng      = Math.floor((Math.random() * 1440) + 360);
@@ -103,7 +106,7 @@ vis.transition()
   
         /* Get the result value from object "data" */
         console.log(data[picked].label)
-  
+        alert(`Yay! You got ${data[picked].label}!`);
         /* Comment the below line for restrict spin to sngle time */
         container.on("click", spin);
     });

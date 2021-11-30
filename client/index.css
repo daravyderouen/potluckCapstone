@@ -22,6 +22,8 @@
       font-size:2.5vh;
   
   }
+
+/* spinning wheel*/
  
   }
   #chart{
@@ -29,9 +31,9 @@
       position: absolute;
       /*position:absolute;*/
       width:50%;
-      height:700px;
+      height:500px;
       top: 35%;
-      left:30%;
+      left:20%;
   }
   #question{
       display: flex;
@@ -40,7 +42,6 @@
       height:500px;
       bottom: 100%;
       left: 5%;
-  
       
   }
   #question h1{
@@ -55,6 +56,8 @@
       -webkit-transform:translate(0%,-50%);
               transform:translate(0%,-50%);
   }
+
+  /* form */
   
   .page{
       width: 15%;
@@ -64,7 +67,7 @@
       border-radius: 15px;
       position: absolute;
       top: 40%;
-      left: 70%;
+      left: 60%;
       fill-opacity: .5;
       font-size: 1.5rem;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -280,7 +283,7 @@
     }
   
   
-  
+  /* recipe cards*/
   
     *{
       top: 0%;
@@ -303,10 +306,10 @@
     }
     
     .wrapper{
-      width: 90%;
+      width: 70%;
       position: relative;
       margin-top: 10%;
-      margin-left: 19%;
+      margin-left: 12%;
       top: 75%;
       max-width: 85rem;
     }
@@ -505,7 +508,7 @@
       background: transparent; /* make scrollbar transparent */
   }
   
-  
+  /*navigation bar*/
   .containerHeader {
       width: 100%;
       height: 25vh;
@@ -593,7 +596,7 @@
   .aeu-signature > img { height: 30px; }
   
   
-  
+  /*CSS for image on about.html*/
   
   .image-area-about
   {
@@ -737,14 +740,14 @@
 footer {
     box-sizing:border-box;
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     justify-content: center;
 }
   
 .groceryList{
-    height: 20vh;
+    height: 25vh;
     font-size: 2rem;
-    background:linear-gradient(-90deg, #81cad6, #90ff99);
+    background:linear-gradient(-90deg, rgb(252, 168, 221),rgb(248, 126, 211));
     border-bottom: 1px gray solid;
     padding: 20px 20px 30px;
     margin:auto;
@@ -765,8 +768,8 @@ footer {
 .buttonGrocery {
       display:inline-block;
       font-size: 2rem;
-    background-color: gray;
-      border: solid gray 2px;
+    background-color: rgb(163, 59, 163);
+      border: solid grey 2px;
       border-radius:4px;
       color:white;
       padding:5px;
@@ -784,17 +787,17 @@ li {
     text-decoration:none;
     padding: 10px;
     font-weight:bold;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
 }
     
 li:nth-child(odd){
     /*background-color:#dedede;*/
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 li:nth-child(even){
      /* background-color:#f1f1f1;*/
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 .check {
     text-decoration: line-through;
