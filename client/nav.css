@@ -330,7 +330,7 @@ body {
 .lead { font-family: 'Quicksand'; }
 .header-bar {
 	position: relative;
-	width: 60%; /* change from 50 to 60 */
+	width: 70%; /* change from 60 to 70 */
 	min-width: 600px;
     top: 5%;
 	height: 50px;
@@ -356,7 +356,7 @@ body {
 }
 .header-bar > .logo {
 	position: absolute;
-  font-size: 3rem;
+  font-size: 2rem;
 	top: calc(100% - 5px);
 	/*left: 10px;*/
 	transform: translateY(-50%);
