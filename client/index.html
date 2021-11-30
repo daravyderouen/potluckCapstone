@@ -37,23 +37,23 @@
 
 
 
-<form id="rsvp">
+<form action="index.js" method="post" id="rsvp">
 <div class="page"><h3 class="form">Please RSVP!</h3>
     
-    <label class="field field_v1">
-        <input class="field__input" placeholder="e.g. Daravy" id="first-name">
+    <label class="field field_v1" for="name">
+        <input class="field__input" name = "first-name" placeholder="e.g. Daravy" id="first-name" type="text" required>
         <span class="field__label-wrap">
         <span class="field__label">First name</span>
           </span>
     </label>
-    <label class="field field_v2">
-        <input class="field__input" placeholder="e.g. DeRouen" id="last-name">
+    <label class="field field_v2" for="last-name">
+        <input class="field__input" name ="last-name" placeholder="e.g. DeRouen" id="last-name" type="text" required>
         <span class="field__label-wrap">
         <span class="field__label">Last name</span>
           </span>
     </label>    
-    <label class="field field_v3">
-        <input class="field__input" placeholder="e.g. (999) 000-0000" id="phone-number">
+    <label class="field field_v3" for="phone-number">
+        <input class="field__input" name="phone-number" placeholder="e.g. (999) 000-0000" id="phone_number" type="text" required>
         <span class="field__label-wrap">
         <span class="field__label">Phone Number</span>
         </span>
@@ -68,14 +68,14 @@
             <label for="rating-two">NO</label>
             <input type="radio" name="rating" value="2" id="rsvp-no"/>
         </div-->
-        <label class="field field_v4">
-            <input class="field__input" placeholder="e.g. Mac & Cheese" id="dish-selected">
+        <label class="field field_v4" for="dish-selected">
+            <input class="field__input" name="dish-selected" placeholder="e.g. Mac & Cheese" id="dish-selected" type="text" required>
             <span class="field__label-wrap">
             <span class="field__label">Dish Selected</span>
             </span>
             </label>
-
-            <input type="submit" value="SUBMIT" class="submit">
+            <button type="reset">Reset</button>
+            <button type="submit" value="SUBMIT" class="submit">SUBMIT</button>
         
       </div>
     </form>
