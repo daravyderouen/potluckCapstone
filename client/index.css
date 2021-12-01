@@ -34,7 +34,7 @@
       height:650px;
       top: 25%;
       left:15%;
-      font-size: 1rem;
+      font-size: 1.1rem;
   }
   #question{
       display: flex;
@@ -61,7 +61,7 @@
   /* form */
   
   .page{
-      width: 350px;
+      width: 300px;
       height: 600px;
       border: 2px solid #FFECFF;
       background-color: violet;
@@ -293,7 +293,7 @@
   /* recipe cards*/
   
     *{
-      top: 0%;
+      top: 20%;
       margin: 0;
       padding: 0;
       -webkit-box-sizing: border-box;
@@ -302,7 +302,7 @@
     
     .footerH1{
       position: relative;
-      font-size: 3rem;
+      font-size: 4rem;
       font-family: 'Montserrat';
       font-weight: normal;
       color:teal;

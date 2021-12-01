@@ -149,7 +149,7 @@ function rotTween(to) {
 
 
 
-const baseURL = `http://localhost:4000/guests`
+const baseURL = `https://potluck-capstone-daravy.herokuapp.com/guests`
 
 
 const form = document.querySelector('#rsvp')
@@ -176,7 +176,7 @@ function handleSubmit(e) {
     }
     console.log(body)
     
-    axios.post('http://localhost:4000/guests', body)
+    axios.post('https://potluck-capstone-daravy.herokuapp.com/guests', body)
         .then(() => {
             firstNameInput.value = ''
             lastNameInput.value = ''
@@ -190,7 +190,7 @@ function handleSubmit(e) {
 
 
 function getGuests() {
-    axios.get('http://localhost:4000/guests')
+    axios.get('https://potluck-capstone-daravy.herokuapp.com/guests')//http://localhost:4000/guests
         .then(res => {
             const guest = res.data[0]
             //debugger

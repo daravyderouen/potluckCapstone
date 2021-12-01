@@ -2,11 +2,16 @@ Potluck Capstone MVP lists:
 
 1. Functional Navigation Bar with buttons: Home, About, Credits
 2. Spinning dish wheel
-3. RSVP form
+3. RSVP form-sequelize into database
 4. Turning recipe cards with full recipe links
-5. About page:
+5. Grocery List: 
+    a. Able to post items(s)
+    b. Able to crossout item(s)
+    c. Able to uncross item(s)
+6. About page:
     a. functional navigation Bar
     b. responsive image 
-    c. buttons to links on image
-6. Credit page:
+    c. social media buttons to links on image
+7. Credit page:
+    a. linked sources
     
