@@ -152,7 +152,7 @@ function rotTween(to) {
 const baseURL = `https://potluck-capstone-daravy.herokuapp.com/guests`
 
 
-const form = document.getElementById('#rsvp')
+const form = document.querySelector('#rsvp')
 const firstNameInput = document.querySelector('#firstName')
 const lastNameInput = document.querySelector('#lastName')
 const phoneInput = document.querySelector('#phoneNumber')
@@ -255,7 +255,7 @@ form.addEventListener('submit', handleSubmit)
 
 
 getGuests()
-
+form.reset()
 
 
 

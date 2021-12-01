@@ -28,9 +28,8 @@ module.exports = {
         );
 
         insert into guests (firstname, lastname, phonenumber, dishselected)
-        values ('MJ', 'DeRouen', '(888) 443-9090', 'Mac and Cheese'),
-            ('Eloise', 'Crabtree', '(777) 889-2323', 'Spaghetti'),
-            ('Ryker', 'Dupuy', '(111) 222-3333', 'Ham and Cheese sandwiches')
+        values ('MJ', 'DeRouen', '(888) 443-9090', 'Mac and Cheese')
+            
             ;
         `).then(() => {//make sure in the future that in order for sequelizer to work, PG web and console browser properties must all match, better wise to stick to using all lowercase!
             console.log('DB seeded!')
