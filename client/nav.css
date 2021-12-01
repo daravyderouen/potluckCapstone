@@ -323,7 +323,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-  background-image: linear-gradient(to bottom right, rgb(235, 76, 171), rgb(227, 77, 171), rgb(218, 78, 170), rgb(210, 80, 170), rgb(202, 81, 170), rgb(193, 82, 170), rgb(185, 83, 169), rgb(176, 84, 169), rgb(168, 85, 169), rgb(160, 87, 169), rgb(151, 88, 168), rgb(143, 89, 168));
+  background-image: linear-gradient(to bottom right, rgb(235, 76, 171), rgb(227, 77, 171), rgb(218, 78, 170), rgb(210, 80, 170), rgb(202, 81, 170), rgb(193, 82, 170), rgb(185, 83, 169), rgb(176, 84, 169), rgb(168, 85, 169), rgb(160, 87, 169), rgb(131, 69, 148), rgb(143, 89, 168));
 
 	color: #fff;
   background-color: transparent;
@@ -471,5 +471,5 @@ a {
 
 a.register:link { color:#FFF; text-decoration:none; font-weight:normal; }
 a.register:visited { color: rgb(128, 225, 241); text-decoration:none; font-weight:normal; }
-a.register:hover { color: rgb(241, 79, 193); text-decoration:underline; font-weight:normal; }
+a.register:hover { color: rgb(241, 79, 193); text-decoration:none; font-weight:normal; }
 a.register:active { color: #FFF; text-decoration:none; font-weight:normal; }

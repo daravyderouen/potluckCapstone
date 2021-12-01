@@ -32,7 +32,7 @@
       /*position:absolute;*/
       width:60%;
       height:650px;
-      top: 30%;
+      top: 35%;
       left:20%;
       font-size: .8rem;
   }
@@ -314,7 +314,9 @@
       align-content: center;
     
     }
-    
+    .recipe{
+      font-size: 1rem;
+    }
     .wrapper{
       width: 70%;
       position: relative;
@@ -322,6 +324,7 @@
       margin-left: 12%;
       top: 80%;
       max-width: 80rem;
+      font-size: 1rem;
     }
     
     .cols{
@@ -537,7 +540,7 @@
   .header-bar {
       position: relative;
       width: 70%;
-      min-width: 600px;
+      min-width: 50%;
     top: 5%;
       height: 50px;
       border: 10px solid transparent;
@@ -804,6 +807,7 @@ li {
     font-weight:bold;
     font-size: 1rem;
     text-align: center;
+    border-bottom: 2px pink solid;
 }
     
 li:nth-child(odd){
@@ -839,6 +843,6 @@ li:nth-child(even){
   
   a.register:link { color:#FFF; text-decoration:none; font-weight:normal; }
   a.register:visited { color: rgb(128, 225, 241); text-decoration:none; font-weight:normal; }
-  a.register:hover { color: rgb(241, 79, 193); text-decoration:underline; font-weight:normal; }
+  a.register:hover { color: rgb(241, 79, 193); text-decoration:none; font-weight:normal; }
   a.register:active { color: #FFF; text-decoration:none; font-weight:normal; }
   
