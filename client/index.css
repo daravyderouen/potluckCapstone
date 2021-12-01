@@ -34,6 +34,7 @@
       height:650px;
       top: 25%;
       left:15%;
+      font-size: 1rem;
   }
   #question{
       display: flex;
@@ -275,12 +276,18 @@
   
     }
   
-    #submit {
+    .submit {
         width: auto;
-        border-radius: 25px;
-        font-size: x-large;
+        border-radius: 20px;
+        font-size: large;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+    .reset {
+      width: auto;
+      border-radius: 20px;
+      font-size: large;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
   
   
   /* recipe cards*/
@@ -312,9 +319,9 @@
       width: 70%;
       position: relative;
       margin-top: 10%;
-      margin-left: 19%;
+      margin-left: 12%;
       top: 80%;
-      max-width: 85rem;
+      max-width: 80rem;
     }
     
     .cols{
