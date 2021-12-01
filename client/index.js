@@ -188,12 +188,20 @@ function handleSubmit(e) {
         })
         
             }
-
+/*
+let defaultObject = {
+    firstName: "Mj",
+    lastName: "DeRouen",
+    phoneNumber: "(444) 343-3221",
+    dishSelected: "Mac and Cheese"
+}
+*/
 
 function getGuests() {
     axios.get('https://potluck-capstone-daravy.herokuapp.com/guests')//http://localhost:4000/guests
         .then(res => {
-            const guest = res.data[0]
+            console.log(res.data)
+            const guest = res.data[0] 
             //debugger
             const { firstname, lastname, phonenumber, dishselected } = guest;
 
@@ -254,7 +262,7 @@ document.addEventListener("click", function (event) {
 form.addEventListener('submit', handleSubmit)
 
 
-getGuests()
+//getGuests()
 form.reset()
 
 
