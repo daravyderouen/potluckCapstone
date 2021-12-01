@@ -183,8 +183,8 @@ function handleSubmit(e) {
             phoneInput.value = ''
             dishSelectedInput.value = '',
             //document.querySelector('#submit') = clicked
-            alert(`Thank you ${firstNameInput.value} for your RSVP!`)
-            getGuests()
+            alert(`Thank you for your RSVP!`)
+            
         })
         
             }
@@ -195,13 +195,13 @@ let defaultObject = {
     phoneNumber: "(444) 343-3221",
     dishSelected: "Mac and Cheese"
 }
-*/
+
 
 function getGuests() {
     axios.get('https://potluck-capstone-daravy.herokuapp.com/guests')//http://localhost:4000/guests
         .then(res => {
             console.log(res.data)
-            const guest = res.data[0] 
+            const guest = res.data
             //debugger
             const { firstname, lastname, phonenumber, dishselected } = guest;
 
@@ -216,7 +216,7 @@ function getGuests() {
 
 
 }
-
+*/
 
 function addToList() {
     //get value from input
@@ -260,10 +260,10 @@ document.addEventListener("click", function (event) {
 
 
 form.addEventListener('submit', handleSubmit)
+form.reset()
 
 
 //getGuests()
-form.reset()
 
 
 
