@@ -17,17 +17,20 @@ app.get('/', (req, res) => {
 
 })
 
-
-
-
-
-
-
-
 app.post('/seed', seed)
 
 app.get('/guests', getGuests)
 app.post('/guests', createGuest)
+
+app.delete('/guests/:id', deleteGuest)
+
+
+
+
+
+
+
+
 
 /*
 app.get("/index.css", (req, res) => {
@@ -45,7 +48,6 @@ app.get("/index.css", (req, res) => {
 
 
 
-app.delete('/guests/:id', deleteGuest)
 
 
 

@@ -13,7 +13,6 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
 })
 
 
-
 module.exports = {
     seed: (req, res) => {
         sequelize.query(`
@@ -62,7 +61,7 @@ module.exports = {
     },
     deleteGuest: (req, res) => {
         console.log('this is delete guest')
-        let {id} = req.params
+        let { id } = req.params
         sequelize.query(`
         DELETE 
         FROM guests
