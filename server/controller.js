@@ -55,8 +55,12 @@ module.exports = {
             .query(
                 `insert into guests (firstname, lastname, phonenumber, dishselected)
                 values ('${firstname}', '${lastname}', '${phonenumber}', '${dishselected}');
+
+                SELECT *
+                FROM guests
+                WHERE firstname = ${firstname} AND lastname = ${lastname} AND phonenumber = ${phonenumber} AND dishselected = ${dishselected};
                 `)
-            .then((dbRes) => res.sendStatus(200))
+            .then((dbRes) => res.status(200).send(dbRes[0]))
             .catch((err) => console.log(err));
     },
     deleteGuest: (req, res) => {
