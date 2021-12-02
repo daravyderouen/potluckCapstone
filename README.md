@@ -15,7 +15,7 @@
 ![Recipe Cards](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/recipeCards.gif)
 
 
-## Home page
+## About page
 
 ![Image Transformation](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/imgHover.gif)
 
