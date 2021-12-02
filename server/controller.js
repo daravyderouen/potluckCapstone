@@ -61,6 +61,7 @@ module.exports = {
             .catch((err) => console.log(err));
     },
     deleteGuest: (req, res) => {
+        let guest_id = id
         let {id} = req.params
         sequelize.query(`
         DELETE

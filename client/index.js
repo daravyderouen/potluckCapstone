@@ -221,7 +221,7 @@ function getGuests() {
 */
 
 function deleteCard(id) {
-    axios.delete(`https://potluck-capstone-daravy.herokuapp.com/guests/id`)
+    axios.delete(`https://potluck-capstone-daravy.herokuapp.com/guests/${id}`)
         .then(() => getGuests())
         .catch(err => console.log(err))
 }
