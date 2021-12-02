@@ -8,18 +8,20 @@
 
 - [Potluck Website](https://potluck-capstone-daravy.herokuapp.com/ "Potluck Website")
 
-## Home page
+## Home Page:
 
 ![Wheel of Dishes](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/spinningWheel.gif)
 
 ![Recipe Cards](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/recipeCards.gif)
 
+![Grocery List](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/groceryList.gif)
 
-## About page
+
+## About Page:
 
 ![Image Transformation](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/imgHover.gif)
 
-## Screenshot of Credit page
+## Credit page:
 
 ![Credits View](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/credits_ss.jpg)
 
