@@ -219,14 +219,6 @@ function getGuests() {
 
 }
 */
-
-function deleteCard(id) {
-    console.log('this is delete card')
-    axios.delete(`https://potluck-capstone-daravy.herokuapp.com/guests/${id}`)
-        .then(() => getGuests())
-        .catch(err => console.log(err))
-}
-
 function getGuests() {
     guestList.innerHTML = ''
 
@@ -244,6 +236,14 @@ function getGuests() {
             })
         })
 }
+function deleteCard(id) {
+    console.log('this is delete card')
+    axios.delete(`https://potluck-capstone-daravy.herokuapp.com/guests/${id}`)
+        .then(() => getGuests())
+        .catch(err => console.log(err))
+}
+
+
 
 
 function addToList() {
