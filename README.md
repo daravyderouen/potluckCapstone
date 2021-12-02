@@ -4,15 +4,11 @@
 
 ## Links
 
-- [Potluck Repo](https://github.com/daravyderouen/potluckCapstone.git "potluckCapstone Repo")
-
 - [Potluck Website](https://potluck-capstone-daravy.herokuapp.com/ "Potluck Website")
 
 ## Screenshots of Home page
 
 ![Home View 1](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/potluck_ss1.jpg)
-
-![Home View 2](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/potluck_ss2.jpg)
 
 
 ## Screenshot of About page
@@ -24,23 +20,14 @@
 
 ![Credits View](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/credits_ss.jpg)
 
-## Built With
 
-- JavaScript
-- Node
-- NPM
-- Express
-- Cors
-- Axios
-- Sequelize
-- PostGres
-- HTML
-- CSS
-- Postman
-- PGweb
-- Heroku
+### Tech Stack
+## Client - HTML, CSS, JavaScript
+## Server - Node, Express
+## Database - Postgres
 
-## MVP
+
+## Features
 - Functional spinning Wheel
 - RSVP request form
 - Guest Cards (post/delete option)
