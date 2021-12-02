@@ -1,3 +1,5 @@
+
+
 <h1 align="center">Potluck Capstone</h1>
 
 <p align="center">Game for everyone!</p>
@@ -10,10 +12,6 @@
 
 ![Home View 1](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/potluck_ss1.jpg)
 
-
-## Screenshot of About page
-
-![About View ](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/about_ss1.jpg)
 
 
 ## Screenshot of Credit page
