@@ -21,10 +21,10 @@
 ![Credits View](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/credits_ss.jpg)
 
 
-### Tech Stack
-## Client - HTML, CSS, JavaScript
-## Server - Node, Express
-## Database - Postgres
+## Tech Stack
+### Client - HTML, CSS, JavaScript
+### Server - Node, Express
+### Database - Postgres
 
 
 ## Features
