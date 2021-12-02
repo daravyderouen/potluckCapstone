@@ -179,14 +179,14 @@ function handleSubmit(e) {
     console.log(body)
 
     axios.post('https://potluck-capstone-daravy.herokuapp.com/guests', body)
-        .then((res) => {
+        .then(() => {
             firstNameInput.value = ''
             lastNameInput.value = ''
             phoneInput.value = ''
             dishSelectedInput.value = ''
                 //document.querySelector('#submit') = clicked
                 //alert(`Thank you for your RSVP!`)
-            guestCard(res.data)
+            
         })
 
 }
@@ -232,16 +232,7 @@ function getGuests() {
         })
 }
 
-function guestCard (guest) {
-    let guestCard = `<div class="guest-card">
-                    <h2>${guest.firstname} ${guest.lastname}</h2>
-                    <h3> ${guest.dishselected}</h3>
-                    <button onclick="deleteCard(${guest['guest_id']})">Delete</button>
-                    </div>
-                `
 
-                guestList.innerHTML += guestCard
-}
 
 function deleteCard(id) {
     console.log('this is delete card')

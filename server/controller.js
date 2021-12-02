@@ -13,6 +13,7 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
 })
 
 
+
 module.exports = {
     seed: (req, res) => {
         sequelize.query(`
@@ -55,21 +56,17 @@ module.exports = {
             .query(
                 `insert into guests (firstname, lastname, phonenumber, dishselected)
                 values ('${firstname}', '${lastname}', '${phonenumber}', '${dishselected}');
-
-                SELECT *
-                FROM guests
-                WHERE firstname = ${firstname} AND lastname = ${lastname} AND phonenumber = ${phonenumber} AND dishselected = ${dishselected};
                 `)
-            .then((dbRes) => res.status(200).send(dbRes[0]))
+            .then((dbRes) => res.sendStatus(200))
             .catch((err) => console.log(err));
     },
     deleteGuest: (req, res) => {
-        console.log('this is delete guest')
-        let { id } = req.params
+        console.log('delete this guest')
+        let {id} = req.params
         sequelize.query(`
-        DELETE 
-        FROM guests
-        WHERE guest_id = ${id};
+        DELETE
+            FROM guests
+            WHERE guest_id = ${id};
         `)
             .then(dbRes => res.status(200).send(dbRes[0]))
             .catch(err => console.log(err))
