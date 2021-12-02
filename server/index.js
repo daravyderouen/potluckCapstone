@@ -4,8 +4,8 @@ const express = require('express')
 const path = require('path')
 const cors = require('cors')
 const app = express()
-const {SERVER_PORT} = process.env
-const {seed, getGuests, createGuest} = require('./controller.js')
+const { SERVER_PORT } = process.env
+const { seed, getGuests, createGuest } = require('./controller.js')
 
 
 app.use(express.json())
@@ -56,6 +56,6 @@ app.get("/index.css", (req, res) => {
 
 
 
-app.listen(port, () => {  
-    console.log(`My server is on fiya ${port}`)
+app.listen(port, () => {
+  console.log(`My server is on fiya ${port}`)
 })

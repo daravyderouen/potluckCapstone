@@ -175,19 +175,19 @@ function handleSubmit(e) {
 
     }
     console.log(body)
-    
+
     axios.post('https://potluck-capstone-daravy.herokuapp.com/guests', body)
         .then(() => {
             firstNameInput.value = ''
             lastNameInput.value = ''
             phoneInput.value = ''
             dishSelectedInput.value = '',
-            //document.querySelector('#submit') = clicked
-            alert(`Thank you for your RSVP!`)
-            
+                //document.querySelector('#submit') = clicked
+                alert(`Thank you for your RSVP!`)
+
         })
-        
-            }
+
+}
 /*
 let defaultObject = {
     firstName: "Mj",

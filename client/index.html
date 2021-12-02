@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale=1.0, shrink-to-fit=no,
+        user-scalable=0">
     <title>Daravy's Potluck Capstone</title>
     <link href="index.css" rel="stylesheet">
 </head>
@@ -12,9 +14,9 @@
     <div class="header-bar">
         <h1 class="logo">POTLUCK GENERATOR</h1>
         <ul class="slider-menu">
-            <li style="cursor:pointer;"><a href='index.html';" target="_blank">HOME</a></li>
-            <li style="cursor:pointer;"><a href='about.html';" target="_blank">ABOUT</a></li>
-            <li style="cursor:pointer;"><a href='credits.html';" target="_blank">CREDITS</a></li>
+            <li style="cursor:pointer;"><a href='index.html' ;" target="_blank">HOME</a></li>
+            <li style="cursor:pointer;"><a href='about.html' ;" target="_blank">ABOUT</a></li>
+            <li style="cursor:pointer;"><a href='credits.html' ;" target="_blank">CREDITS</a></li>
         </ul>
     </div>
 </div>
@@ -23,42 +25,45 @@
 
 <body>
 
-<!--div class="header">
+    <!--div class="header">
     <h2>Potluck Generator</h2>
-</div--> 
+</div-->
 
-<div id="question">
-    <!--h1>Click spin!</h1-->
-</div>
+    <div id="question">
+        <!--h1>Click spin!</h1-->
+    </div>
 
-<div id="chart"></div>
-
-
+    <div id="chart"></div>
 
 
 
-<form id="rsvp">
-<div class="page"><h3 class="form">Please RSVP!</h3>
-    
-    <label class="field field_v1" for="firstName">
-        <input class="field__input" name = "firstName" placeholder="e.g. Daravy" id="firstName" type="text" required>
-        <span class="field__label-wrap">
-        <span class="field__label">First name</span>
-          </span>
-    </label>
-    <label class="field field_v2" for="lastName">
-        <input class="field__input" name ="lastName" placeholder="e.g. DeRouen" id="lastName" type="text">
-        <span class="field__label-wrap">
-        <span class="field__label">Last name</span>
-          </span>
-    </label>    
-    <label class="field field_v3" for="phoneNumber">
-        <input class="field__input" name="phoneNumber" placeholder="e.g. (999) 000-0000" id="phoneNumber" type="text">
-        <span class="field__label-wrap">
-        <span class="field__label">Phone Number</span>
-        </span>
-        </label>
-        <!--h4>Will you be attending?</h4>
+
+
+    <form id="rsvp">
+        <div class="page">
+            <h3 class="form">Please RSVP!</h3>
+
+            <label class="field field_v1" for="firstName">
+                <input class="field__input" name="firstName" placeholder="e.g. Daravy" id="firstName" type="text"
+                    required>
+                <span class="field__label-wrap">
+                    <span class="field__label">First name</span>
+                </span>
+            </label>
+            <label class="field field_v2" for="lastName">
+                <input class="field__input" name="lastName" placeholder="e.g. DeRouen" id="lastName" type="text">
+                <span class="field__label-wrap">
+                    <span class="field__label">Last name</span>
+                </span>
+            </label>
+            <label class="field field_v3" for="phoneNumber">
+                <input class="field__input" name="phoneNumber" placeholder="e.g. (999) 000-0000" id="phoneNumber"
+                    type="text">
+                <span class="field__label-wrap">
+                    <span class="field__label">Phone Number</span>
+                </span>
+            </label>
+            <!--h4>Will you be attending?</h4>
         <div class="radio">
             <label for="rsvp-yes">YES</label>
             <input type="radio" name="rating" value="1" id="rsvp-yes" checked="true"/>
@@ -68,232 +73,250 @@
             <label for="rating-two">NO</label>
             <input type="radio" name="rating" value="2" id="rsvp-no"/>
         </div-->
-        <label class="field field_v4" for="dishSelected">
-            <input class="field__input" name="dishSelected" placeholder="e.g. Mac & Cheese" id="dishSelected" type="text">
-            <span class="field__label-wrap">
-            <span class="field__label">Dish Selected</span>
-            </span>
+            <label class="field field_v4" for="dishSelected">
+                <input class="field__input" name="dishSelected" placeholder="e.g. Mac & Cheese" id="dishSelected"
+                    type="text">
+                <span class="field__label-wrap">
+                    <span class="field__label">Dish Selected</span>
+                </span>
             </label>
-            
+
             <button type="submit" value="submit" class="submit">SUBMIT</button>
             <button type="reset" class="reset">RESET</button>
-      </div>
+        </div>
     </form>
-    
+
 
 
 
     <div class="wrapper">
-        <h1 class="footerH1">Recipe Cards</h1>  
+        <h1 class="footerH1">Recipe Cards</h1>
         <div class="cols">
-                  <div class="col" ontouchstart="this.classList.toggle('hover');">
-                      <div class="container">
-                          <div class="front" style="background-image: url(images/spaghetti2.jpg)">
-                              <div class="inner">
-                                  <p>Spaghetti</p>
-                    <span>Classic Meat Sauce Recipe</span>
-                              </div>
-                          </div>
-                          <div class="back">
-                              <div class="inner">
-                                <p>
-                                    
-                                        <p class="recipe" style="cursor:pointer;"><a href='https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/';" target="_blank"> Spaghetti Recipe</a></p>
-                                    
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/spaghetti2.jpg)">
+                        <div class="inner">
+                            <p>Spaghetti</p>
+                            <span>Classic Meat Sauce Recipe</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
 
-                                    </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col" ontouchstart="this.classList.toggle('hover');">
-                      <div class="container">
-                          <div class="front" style="background-image: url(images/mac_and_cheese.jpg);">
-                              <div class="inner">
-                                  <p>Mac & Cheese</p>
-                    <span>The Classic</span>
-                              </div>
-                          </div>
-                          <div class="back">
-                              <div class="inner">
-                                  <p>
-                                      
-                                          <p style="cursor:pointer;"><a href='https://www.allrecipes.com/recipe/11679/homemade-mac-and-cheese/';" target="_blank"> Mac & Cheese Recipe</a></p>
-                                      
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col" ontouchstart="this.classList.toggle('hover');">
-                      <div class="container">
-                          <div class="front" style="background-image: url(images/green_bean_casserole.jpg)">
-                              <div class="inner">
-                                  <p>Green Bean Casserole</p>
-                    <span>Southern Must Have</span>
-                              </div>
-                          </div>
-                          <div class="back">
-                              <div class="inner">
-                                  <p>
-                                     
-                                          <p style="cursor:pointer;"><a href='https://www.delish.com/holiday-recipes/thanksgiving/a55340/easy-homemade-classic-green-bean-casserole-recipe/';" target="_blank"> Green Bean Casserole Recipe</a></p>
-                                      
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col" ontouchstart="this.classList.toggle('hover');">
-                      <div class="container">
-                          <div class="front" style="background-image: url(images/pepper_jelly_meatballs.jpg)">
-                              <div class="inner">
-                                  <p>Pepper Jelly Meatballs</p>
-                    <span>Best tailgating appetizer!</span>
-                              </div>
-                          </div>
-                          <div class="back">
-                              <div class="inner">
-                                  <p>
-                                    
-                                        <p style="cursor:pointer;"><a href='https://spicysouthernkitchen.com/crock-pot-cranberry-meatballs-2/';" target="_blank"> Pepper Jelly Meatballs Recipe</a></p>
-                                    
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col" ontouchstart="this.classList.toggle('hover');">
-                      <div class="container">
-                          <div class="front" style="background-image: url(images/ham_and_cheese_sliders.jpg)">
-                              <div class="inner">
-                                  <p>Ham & Cheese Sliders</p>
-                    <span>The Classic: Grown up Style</span>
-                              </div>
-                          </div>
-                          <div class="back">
-                              <div class="inner">
-                                  <p>
-                                    <p style="cursor:pointer;"><a href='https://www.dinneratthezoo.com/ham-and-cheese-sliders/';" target="_blank">Ham & Cheese Sliders Recipe</a></p>
-                                </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col" ontouchstart="this.classList.toggle('hover');">
-                      <div class="container">
-                          <div class="front" style="background-image: url(images/jambalaya.jpg)">
-                              <div class="inner">
-                                  <p>Jambalaya</p>
-                    <span>A Cajun Favorite</span>
-                              </div>
-                          </div>
-                          <div class="back">
-                              <div class="inner">
-                                  <p>
-                                    
-                                        <p style="cursor:pointer;"><a href='https://www.sweetdaddy-d.com/cajun-jambalaya/';" target="_blank"> Jambalaya Recipe</a></p>
-                                     
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col" ontouchstart="this.classList.toggle('hover');">
-                      <div class="container">
-                          <div class="front" style="background-image: url(images/chicken_pot_pie2.jpg)">
-                              <div class="inner">
-                                  <p>Chicken Pot Pie</p>
-                    <span>Wholesome Meal-in-One</span>
-                              </div>
-                          </div>
-                          <div class="back">
-                              <div class="inner">
-                                  <p>
-                                    
-                                        <p style="cursor:pointer;"><a href='https://www.pillsbury.com/recipes/classic-chicken-pot-pie/1401d418-ac0b-4b50-ad09-c6f1243fb992';" target="_blank"> Chicken Pot Pie Recipe</a></p>
-                                    
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col" ontouchstart="this.classList.toggle('hover');">
-                    <div class="container">
-                        <div class="front" style="background-image: url(images/piggy_in_the_blanket.jpg)">
-                            <div class="inner">
-                                <p>Piggy In The Blanket</p>
-                  <span>Everybody's Childhood Favorite</span>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <p>
-                                    
-                                <p style="cursor:pointer;"><a href='https://www.delish.com/cooking/recipe-ideas/recipes/a58344/homemade-pigs-in-a-blanket-recipe/';" target="_blank"> Piggy In Blanket Recipe</a></p>
-                                    
-                                </p>
-                            </div>
+                            <p style="cursor:pointer;"><a
+                                    href='https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/' ;"
+                                    target="_blank">Spaghetti Recipe</a></p>
+
+
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col" ontouchstart="this.classList.toggle('hover');">
-                    <div class="container">
-                        <div class="front" style="background-image: url(images/spring_rolls.jpg)">
-                            <div class="inner">
-                                <p>Spring Rolls</p>
-                  <span>Flavorful Healthy Option</span>
-                            </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/mac_and_cheese.jpg);">
+                        <div class="inner">
+                            <p>Mac & Cheese</p>
+                            <span>The Classic</span>
                         </div>
-                        <div class="back">
-                            <div class="inner">
-                                <p>
-                                        <p style="cursor:pointer;"><a href='https://www.youtube.com/watch?v=et0p8xvd_xk';" target="_blank">Spring Rolls Recipe</a></p>
-                            
-                                </p>
-                            </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+
+                            <p style="cursor:pointer;"><a
+                                    href='https://www.allrecipes.com/recipe/11679/homemade-mac-and-cheese/' ;"
+                                    target="_blank">Mac & Cheese Recipe</a></p>
+
+                            </p>
                         </div>
                     </div>
                 </div>
-                  <div class="col" ontouchstart="this.classList.toggle('hover');">
-                      <div class="container">
-                          <div class="front" style="background-image: url(images/crawfish_etouffee.jpg)">
-                              <div class="inner">
-                                  <p>Crawfish Etouffee</p>
-                    <span>Finger Licking Good!</span>
-                              </div>
-                          </div>
-                          <div class="back">
-                              <div class="inner">
-                                  <p>
-                                    
-                                        
-                                        <p><a href='https://www.tfrecipes.com/cajun-ninja-crawfish-etouffee/';" target="_blank"> Crawfish Etouffee Recipe</a></p>
-                                    
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-       </div>  
-       
-    
-<footer>  
-    <div class="groceryList">
-        <h2 class="groceryListH2">Add an item below</h2>
-          <input id="inputTextGrocery" type="text" style="height:40px;font-size:18pt;">
-          <button class="buttonGrocery" onclick="addToList()">add</button>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/green_bean_casserole.jpg)">
+                        <div class="inner">
+                            <p>Green Bean Casserole</p>
+                            <span>Southern Must Have</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+
+                            <p style="cursor:pointer;"><a
+                                    href='https://www.delish.com/holiday-recipes/thanksgiving/a55340/easy-homemade-classic-green-bean-casserole-recipe/'
+                                    ;" target="_blank"> Green Bean Casserole Recipe</a></p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/pepper_jelly_meatballs.jpg)">
+                        <div class="inner">
+                            <p>Pepper Jelly Meatballs</p>
+                            <span>Best tailgating appetizer!</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+
+                            <p style="cursor:pointer;"><a
+                                    href='https://spicysouthernkitchen.com/crock-pot-cranberry-meatballs-2/' ;"
+                                    target="_blank"> Pepper Jelly Meatballs Recipe</a></p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/ham_and_cheese_sliders.jpg)">
+                        <div class="inner">
+                            <p>Ham & Cheese Sliders</p>
+                            <span>The Classic: Grown up Style</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                            <p style="cursor:pointer;"><a href='https://www.dinneratthezoo.com/ham-and-cheese-sliders/'
+                                    ;" target="_blank">Ham & Cheese Sliders Recipe</a></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/jambalaya.jpg)">
+                        <div class="inner">
+                            <p>Jambalaya</p>
+                            <span>A Cajun Favorite</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+
+                            <p style="cursor:pointer;"><a href='https://www.sweetdaddy-d.com/cajun-jambalaya/' ;"
+                                    target="_blank"> Jambalaya Recipe</a></p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/chicken_pot_pie2.jpg)">
+                        <div class="inner">
+                            <p>Chicken Pot Pie</p>
+                            <span>Wholesome Meal-in-One</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+
+                            <p style="cursor:pointer;"><a
+                                    href='https://www.pillsbury.com/recipes/classic-chicken-pot-pie/1401d418-ac0b-4b50-ad09-c6f1243fb992'
+                                    ;" target="_blank"> Chicken Pot Pie Recipe</a></p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/piggy_in_the_blanket.jpg)">
+                        <div class="inner">
+                            <p>Piggy In Blanket</p>
+                            <span>Everybody's Childhood Favorite</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+
+                            <p style="cursor:pointer;"><a
+                                    href='https://www.delish.com/cooking/recipe-ideas/recipes/a58344/homemade-pigs-in-a-blanket-recipe/'
+                                    ;" target="_blank">Piggy In Blanket Recipe</a></p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/spring_rolls.jpg)">
+                        <div class="inner">
+                            <p>Spring Rolls</p>
+                            <span>Flavorful Healthy Option</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                            <p style="cursor:pointer;"><a href='https://www.youtube.com/watch?v=et0p8xvd_xk' ;"
+                                    target="_blank">Spring Rolls Recipe</a></p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/crawfish_etouffee.jpg)">
+                        <div class="inner">
+                            <p>Crawfish Etouffee</p>
+                            <span>Finger Licking Good!</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+
+
+                            <p><a href='https://www.tfrecipes.com/cajun-ninja-crawfish-etouffee/' ;" target="_blank">
+                                    Crawfish Etouffee Recipe</a></p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <footer>
+        <div class="groceryList">
+            <h2 class="groceryListH2">Add an item below</h2>
+            <input id="inputTextGrocery" type="text" style="height:40px;font-size:18pt;">
+            <button class="buttonGrocery" onclick="addToList()">add</button>
+        </div>
         <ul id="list">
-        
-        </ul>     
-</footer>
+
+        </ul>
+    </footer>
 
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="./index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="./index.js"></script>
 
 </body>
+
 </html>

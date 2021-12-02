@@ -1,0 +1,255 @@
+
+.containerHeader {
+    width: 100%;
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    background-image: linear-gradient(to bottom right, rgb(235, 76, 171), rgb(227, 77, 171), rgb(218, 78, 170), rgb(210, 80, 170), rgb(202, 81, 170), rgb(193, 82, 170), rgb(185, 83, 169), rgb(176, 84, 169), rgb(168, 85, 169), rgb(160, 87, 169), rgb(131, 69, 148), rgb(143, 89, 168));
+  
+      color: #fff;
+    background-color: transparent;
+  }
+  .lead { font-family: 'Quicksand'; }
+  .header-bar {
+      position: relative;
+      width: 70%; /* change from 60 to 70 */
+      min-width: 600px;
+      top: 5%;
+      height: 50px;
+      border: 10px solid transparent;
+      border-top: 10px solid #fffa;
+      border-left: 10px solid #fffa;
+      box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25) inset;
+    text-align: center;
+    background-color: transparent;
+  }
+  .header-bar::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 60%;
+      height: 49px;
+      border: 10px solid transparent;
+      border-bottom: 10px solid #fffa;
+      border-right: 10px solid #fffa;
+      transition: 0.3s linear all;
+    background-color: transparent;
+  }
+  .header-bar > .logo {
+      position: absolute;
+    font-size: 2rem;
+      top: calc(100% - 5px);
+      /*left: 10px;*/
+      transform: translateY(-50%);
+      color: #fffc;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      cursor: default;
+      user-select: none;
+    background-color: transparent;
+  }
+  .slider-menu-about {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      z-index: 1;
+    background-color: transparent;
+  }
+  .slider-menu-about > li {
+      display: inline-flex;
+      padding: 14px;
+      margin-left: 2px;
+      font-family: 'Quicksand', sans-serif;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s linear all;
+      user-select: none;
+    background-color: transparent;
+  }
+  .slider-menu-about > li:hover {
+      color: #faa;
+      box-shadow: 0 50px 5px rgba(0, 0, 0, 0.15) inset;
+    background-color: transparent;
+  }
+  .aeu-signature {
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 15px;
+      line-height: 30px;
+      background-color: #fff;
+      padding: 5px 10px;
+      border-radius: 25px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  .aeu-signature { font-family: "Quicksand"; }
+  .aeu-signature > img { height: 30px; }
+  
+  .logo-about{
+    background-color: transparent;
+    font-size: 2rem;
+    display: flex;
+    position: left;
+    justify-content: left;
+    align-self: center;
+  
+  }
+  
+  .lead{
+    background-color: transparent;
+    font-size: 1.5rem;
+   
+  }
+  
+     /* Hide scrollbar for Chrome, Safari and Opera */
+    .scrollbar-hidden::-webkit-scrollbar {
+      display: none;
+    }
+    html {
+      overflow:   scroll;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* make scrollbar transparent */
+    }
+
+    /*new css stuff*/
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .hero {
+        top: 10%;
+        height: 90vh;
+        background: linear-gradient(45deg, rgba(255,175,189,.7), rgba(100,216,243,.7), rgba(234,236,198,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 800% no-repeat, url(images/simple_flowers.jpg) 0 0 / cover no-repeat;
+        -webkit-animation: gradientAnimation 30s ease infinite;
+        animation: gradientAnimation 30s ease infinite;
+    }
+    @-webkit-keyframes gradientAnimation {
+        0%   { background-position: 0% 90%, 0 0;}
+        50%  { background-position: 100% 70%, 0 0;}
+        100% { background-position: 0% 30%, 0 0;}
+    }
+    @keyframes gradientAnimation {
+        0%   { background-position: 0% 30%, 0 0;}
+        50%  { background-position: 100% 70%, 0 0;}
+        100% { background-position: 0% 30%, 0 0;}
+    }
+    h2 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: violet;
+        font : normal 600 72px/1 'Open Sans', sans-serif;
+        text-align: center;
+        white-space: nowrap;
+    }
+    h2 span {
+        display: block;
+        margin-top: 1em;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+h3 {
+    font-size: 2.5rem;
+    color: rgb(32, 199, 171);
+    }
+
+    
+/* links*/
+a {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  a.register:link { color:#FFF; text-decoration:none; font-weight:normal; }
+  a.register:visited { color: rgb(128, 225, 241); text-decoration:none; font-weight:normal; }
+  a.register:hover { color: rgb(241, 79, 193); text-decoration:none; font-weight:normal; }
+  a.register:active { color: #FFF; text-decoration:none; font-weight:normal; }
+
+
+  
+.lightsUL {
+    position: relative;
+    display: flex;
+  }
+  
+.lightsLI {
+    list-style: none;
+  }
+  
+  label {
+    position: relative;
+  }
+  
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    z-index: 100;
+  }
+  
+  .lights {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    background: #EAD4CE;
+    color: #555;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    cursor: pointer;
+    margin: 0 4px;
+    border-radius: 20px;
+    box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+      4px 4px 6px rgba(0, 0, 0, 0.2),
+      inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+      inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* div:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 75px;
+    height: 38px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+  } */
+  
+  input[type="checkbox"]:checked ~ div {
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+      inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+    color: yellow;
+    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+    animation: glow 1.5s linear infinite;
+  }
+  
+  @keyframes glow {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  

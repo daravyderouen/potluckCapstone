@@ -473,3 +473,11 @@ a.register:link { color:#FFF; text-decoration:none; font-weight:normal; }
 a.register:visited { color: rgb(128, 225, 241); text-decoration:none; font-weight:normal; }
 a.register:hover { color: rgb(241, 79, 193); text-decoration:none; font-weight:normal; }
 a.register:active { color: #FFF; text-decoration:none; font-weight:normal; }
+
+.footerCredit {
+  background-image: url(/client/images/thankyou1.jpg);
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+/* content from right side of credit*/

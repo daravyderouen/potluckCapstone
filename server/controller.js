@@ -37,8 +37,8 @@ module.exports = {
         sequelize.query(`
         SELECT * FROM guests;
         `)
-        .then(dbRes => res.status(200).send(dbRes[0]))
-        .catch(err => console.log(err))
+            .then(dbRes => res.status(200).send(dbRes[0]))
+            .catch(err => console.log(err))
     },
 
     createGuest: (req, res) => {
@@ -48,9 +48,9 @@ module.exports = {
             lastname,
             phonenumber,
             dishselected
-            
+
         } = req.body;
-        
+
 
         sequelize
             .query(
@@ -61,14 +61,14 @@ module.exports = {
             .catch((err) => console.log(err));
     },
     deleteGuest: (req, res) => {
-        let {id} = req.params 
+        let { id } = req.params
         sequelize.query(`
         DELETE
             FROM guests
             WHERE guest_id = ${id};
         `)
-        .then(dbRes => res.status(200).send(dbRes[0]))
-        .catch(err => console.log(err))
+            .then(dbRes => res.status(200).send(dbRes[0]))
+            .catch(err => console.log(err))
     }
 }
 
