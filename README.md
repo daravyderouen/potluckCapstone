@@ -20,21 +20,21 @@
 - PostGres
 - HTML
 - CSS
--Postman
--PGweb
--Heroku
+- Postman
+- PGweb
+- Heroku
 
 ## Credits to Sources
-- [SOURCES](https://codepen.io/sumeshkp18/pen/VGBPYg "CSS")
-- [SOURCES](https://www.w3schools.com/ "CSS & JavaScript")
-- [SOURCES](https://stackoverflow.com/questions/ "Frontend/Backend Questions")
+- [Codepen](https://codepen.io/sumeshkp18/pen/VGBPYg "CSS")
+- [W3Schools](https://www.w3schools.com/ "CSS & JavaScript")
+- [Stackoverflow](https://stackoverflow.com/questions/ "Frontend/Backend Questions")
 
 ## Author
 
 **Daravy DeRouen**
 
 - [Profile](https://github.com/daravyderouen "Daravy DeRouen")
-- [Website]("Stay Tuned!")
+- [Visit Me](https://potluck-capstone-daravy.herokuapp.com/about.html "Stay Tuned!")
 
 ## 🤝 Support
 
