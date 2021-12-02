@@ -1,6 +1,6 @@
-<h1 align="center"><Potluck_Capstone></h1>
+<h1 align="center">Potluck Capstone</h1>
 
-<p align="center"><Game_for_everyone!></p>
+<p align="center">Game for everyone!</p>
 
 ## Links
 
@@ -9,7 +9,7 @@
 - [Heroku](https://potluck-capstone-daravy.herokuapp.com/ "Potluck Website")
 
 ## Screenshots
-![Potluck Screenshot 1]("client\images\potluck_ss1.jpg")
+![alt text](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/about_ss1.jpg)
 
 
 ## Built With
