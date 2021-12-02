@@ -1,4 +1,4 @@
-
+![](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/potluckCapstone.jpg)
 
 <h1 align="center">Potluck Capstone</h1>
 
@@ -8,11 +8,16 @@
 
 - [Potluck Website](https://potluck-capstone-daravy.herokuapp.com/ "Potluck Website")
 
-## Screenshots of Home page
+## Home page
 
-![Home View 1](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/potluck_ss1.jpg)
+![Wheel of Dishes](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/spinningWheel.gif)
+
+![Recipe Cards](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/recipeCards.gif)
 
 
+## Home page
+
+![Image Transformation](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/imgHover.gif)
 
 ## Screenshot of Credit page
 
