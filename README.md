@@ -1,1 +1,1 @@
-# potluckCapstone
+# PotluckCapstone
