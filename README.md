@@ -4,25 +4,48 @@
 
 ## Links
 
-- [Repo](https://github.com/daravyderouen/potluckCapstone.git "potluckCapstone Repo")
+- [Potluck Repo](https://github.com/daravyderouen/potluckCapstone.git "potluckCapstone Repo")
 
-- [Heroku](https://potluck-capstone-daravy.herokuapp.com/ "Potluck Website")
+- [Potluck Website](https://potluck-capstone-daravy.herokuapp.com/ "Potluck Website")
 
-## Screenshots
-![alt text](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/about_ss1.jpg)
+## Screenshots of Home page
 
+![Home View 1](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/potluck_ss1.jpg)
+
+![Home View 2](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/potluck_ss2.jpg)
+
+
+## Screenshot of About page
+
+![About View ](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/about_ss1.jpg)
+
+
+## Screenshot of Credit page
+
+![Credits View](https://github.com/daravyderouen/potluckCapstone/blob/main/client/images/credits_ss.jpg)
 
 ## Built With
 
 - JavaScript
 - Node
 - NPM
+- Express
+- Cors
+- Axios
+- Sequelize
 - PostGres
 - HTML
 - CSS
 - Postman
 - PGweb
 - Heroku
+
+## MVP
+- Functional spinning Wheel
+- RSVP request form
+- Guest Cards (post/delete option)
+- Recipe Cards with links
+- Surprise buttons with light up features
 
 ## Credits to Sources
 - [Codepen](https://codepen.io/sumeshkp18/pen/VGBPYg "CSS")
