@@ -191,12 +191,7 @@ function handleSubmit(e) {
 
 }
 /*
-let defaultObject = {
-    firstName: "Mj",
-    lastName: "DeRouen",
-    phoneNumber: "(444) 343-3221",
-    dishSelected: "Mac and Cheese"
-}
+
 
 
 function getGuests() {
@@ -236,6 +231,8 @@ function getGuests() {
             })
         })
 }
+
+
 function deleteCard(id) {
     console.log('this is delete card')
     axios.delete(`https://potluck-capstone-daravy.herokuapp.com/guests/${id}`)
@@ -286,7 +283,7 @@ document.addEventListener("click", function (event) {
 
 
 
-getGuests()
+//getGuests()
 form.addEventListener('submit', handleSubmit)
 //form.reset()
 
