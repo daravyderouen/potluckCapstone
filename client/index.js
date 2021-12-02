@@ -283,7 +283,7 @@ document.addEventListener("click", function (event) {
 
 
 
-//getGuests()
+getGuests()
 form.addEventListener('submit', handleSubmit)
 //form.reset()
 
