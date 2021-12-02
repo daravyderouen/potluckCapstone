@@ -593,7 +593,7 @@
       user-select: none;
   }
   .slider-menu > li:hover {
-      color: #faa;
+      color:white;
       box-shadow: 0 50px 5px rgba(0, 0, 0, 0.15) inset;
   }
   .aeu-signature {
@@ -807,7 +807,7 @@ li {
     font-weight:bold;
     font-size: 1rem;
     text-align: center;
-    border-bottom: 2px pink solid;
+    
 }
     
 li:nth-child(odd){
@@ -834,15 +834,38 @@ li:nth-child(even){
 
 /* links*/
 
-  a {
+a {
     background-color: transparent;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+
   }
   
   a.register:link { color:#FFF; text-decoration:none; font-weight:normal; }
   a.register:visited { color: rgb(128, 225, 241); text-decoration:none; font-weight:normal; }
-  a.register:hover { color: rgb(241, 79, 193); text-decoration:none; font-weight:normal; }
+  a.register:hover { color: white; text-decoration:none; font-weight:normal; }
   a.register:active { color: #FFF; text-decoration:none; font-weight:normal; }
   
+
+  
+.guest-card {
+  top: 20%;
+  left: 60%;
+  width: 50vh;
+  height: 40vh;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.guest-card > h2 {
+  margin-bottom: 10px;
+}
+
+.guest-card > button {
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 2px 10px;
+}

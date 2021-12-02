@@ -160,12 +160,12 @@
         word-wrap: break-word;
         display: block;
         margin-top: 1em;
-        font-size: 1.5rem;
+        font-size: 1rem;
         
     }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: rgb(32, 199, 171);
     }
 
@@ -255,4 +255,3 @@ a {
       filter: hue-rotate(360deg);
     }
   }
-  

@@ -14,9 +14,9 @@
     <div class="header-bar">
         <h1 class="logo">POTLUCK GENERATOR</h1>
         <ul class="slider-menu">
-            <li style="cursor:pointer;"><a href='index.html' ;" target="_blank">HOME</a></li>
-            <li style="cursor:pointer;"><a href='about.html' ;" target="_blank">ABOUT</a></li>
-            <li style="cursor:pointer;"><a href='credits.html' ;" target="_blank">CREDITS</a></li>
+            <li class="liNav" style="cursor:pointer;"><a href='index.html' ;" target="_blank">HOME</a></li>
+            <li class="liNav" style="cursor:pointer;"><a href='about.html' ;" target="_blank">ABOUT</a></li>
+            <li class="liNav" style="cursor:pointer;"><a href='credits.html' ;" target="_blank">CREDITS</a></li>
         </ul>
     </div>
 </div>
@@ -25,9 +25,7 @@
 
 <body>
 
-    <!--div class="header">
-    <h2>Potluck Generator</h2>
-</div-->
+    
 
     <div id="question">
         <!--h1>Click spin!</h1-->
@@ -37,8 +35,8 @@
 
 
 
-
-
+<main>
+<aside>
     <form id="rsvp">
         <div class="page">
             <h3 class="form">Please RSVP!</h3>
@@ -51,7 +49,8 @@
                 </span>
             </label>
             <label class="field field_v2" for="lastName">
-                <input class="field__input" name="lastName" placeholder="e.g. DeRouen" id="lastName" type="text" required>
+                <input class="field__input" name="lastName" placeholder="e.g. DeRouen" id="lastName" type="text"
+                    required>
                 <span class="field__label-wrap">
                     <span class="field__label">Last name</span>
                 </span>
@@ -63,16 +62,6 @@
                     <span class="field__label">Phone Number</span>
                 </span>
             </label>
-            <!--h4>Will you be attending?</h4>
-        <div class="radio">
-            <label for="rsvp-yes">YES</label>
-            <input type="radio" name="rating" value="1" id="rsvp-yes" checked="true"/>
-        </div>
-
-        <div class="radio">
-            <label for="rating-two">NO</label>
-            <input type="radio" name="rating" value="2" id="rsvp-no"/>
-        </div-->
             <label class="field field_v4" for="dishSelected">
                 <input class="field__input" name="dishSelected" placeholder="e.g. Mac & Cheese" id="dishSelected"
                     type="text" required>
@@ -85,10 +74,12 @@
             <button type="reset" class="reset">RESET</button>
         </div>
     </form>
+</aside>
+<section id="guest-list"></section>
 
 
 
-
+</main>
     <div class="wrapper">
         <h1 class="footerH1">Recipe Cards</h1>
         <div class="cols">

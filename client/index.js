@@ -1,4 +1,5 @@
 
+
 var padding = { top: 20, right: 50, bottom: 0, left: 0 },
     w = 550 - padding.left - padding.right,
     h = 550 - padding.top - padding.bottom,
@@ -157,6 +158,7 @@ const firstNameInput = document.querySelector('#firstName')
 const lastNameInput = document.querySelector('#lastName')
 const phoneInput = document.querySelector('#phoneNumber')
 const dishSelectedInput = document.querySelector('#dishSelected')
+const guestList = document.querySelector('#guest-list')
 
 function handleSubmit(e) {
     e.preventDefault()
@@ -218,6 +220,31 @@ function getGuests() {
 }
 */
 
+function deleteCard(id) {
+    axios.delete(`https://potluck-capstone-daravy.herokuapp.com/guests/id`)
+        .then(() => getGuests())
+        .catch(err => console.log(err))
+}
+
+function getGuests() {
+    guestList.innerHTML = ''
+
+    axios.get('https://potluck-capstone-daravy.herokuapp.com/guests/')
+        .then(res => {
+            res.data.forEach(elem => {
+                let guestCard = `<div class="guest-card">
+                    <h2>${elem.firstname}, ${elem.lastname}</h2>
+                    <h3> ${elem.dishselected}</h3>
+                    <button onclick="deleteCard(${elem['guest_id']})">Delete</button>
+                    </div>
+                `
+
+                guestList.innerHTML += guestCard
+            })
+        })
+}
+
+
 function addToList() {
     //get value from input
     var value = document.getElementById("inputTextGrocery").value;
@@ -258,12 +285,12 @@ document.addEventListener("click", function (event) {
 
 
 
-
+getGuests()
 form.addEventListener('submit', handleSubmit)
 form.reset()
 
 
-//getGuests()
+
 
 
 

@@ -5,7 +5,7 @@ const path = require('path')
 const cors = require('cors')
 const app = express()
 const { SERVER_PORT } = process.env
-const { seed, getGuests, createGuest } = require('./controller.js')
+const { seed, getGuests, createGuest, deleteGuest } = require('./controller.js')
 
 
 app.use(express.json())
@@ -45,7 +45,7 @@ app.get("/index.css", (req, res) => {
 
 
 
-//app.delete('/guests/:id', deleteGuest)
+app.delete('/guests/:id', deleteGuest)
 
 
 //app.use(rollbar.errorHandler());
