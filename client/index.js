@@ -221,6 +221,7 @@ function getGuests() {
 */
 
 function deleteCard(id) {
+    console.log('this is delete card')
     axios.delete(`https://potluck-capstone-daravy.herokuapp.com/guests/${id}`)
         .then(() => getGuests())
         .catch(err => console.log(err))
@@ -235,7 +236,7 @@ function getGuests() {
                 let guestCard = `<div class="guest-card">
                     <h2>${elem.firstname} ${elem.lastname}</h2>
                     <h3> ${elem.dishselected}</h3>
-                    <button onclick="deleteCard(${elem['guest_id']})">Delete</button>
+                    <button onclick="deleteCard(${elem.guest_id})">Delete</button>
                     </div>
                 `
 

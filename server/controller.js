@@ -61,11 +61,12 @@ module.exports = {
             .catch((err) => console.log(err));
     },
     deleteGuest: (req, res) => {
+        console.log('this is delete guest')
         let {id} = req.params
         sequelize.query(`
-        DELETE
-            FROM guests
-            WHERE guest_id = {id};
+        DELETE 
+        FROM guests
+        WHERE guest_id = ${id};
         `)
             .then(dbRes => res.status(200).send(dbRes[0]))
             .catch(err => console.log(err))
