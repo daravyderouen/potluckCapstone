@@ -233,7 +233,7 @@ function getGuests() {
         .then(res => {
             res.data.forEach(elem => {
                 let guestCard = `<div class="guest-card">
-                    <h2>${elem.firstname}, ${elem.lastname}</h2>
+                    <h2>${elem.firstname} ${elem.lastname}</h2>
                     <h3> ${elem.dishselected}</h3>
                     <button onclick="deleteCard(${elem['guest_id']})">Delete</button>
                     </div>
