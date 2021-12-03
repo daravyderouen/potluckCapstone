@@ -158,7 +158,7 @@ const firstNameInput = document.querySelector('#firstName')
 const lastNameInput = document.querySelector('#lastName')
 const phoneInput = document.querySelector('#phoneNumber')
 const dishSelectedInput = document.querySelector('#dishSelected')
-const guestList = document.querySelector('#guest-list')
+const guestList = document.querySelector('#guestlist')
 
 function handleSubmit(e) {
     e.preventDefault()
@@ -179,33 +179,34 @@ function handleSubmit(e) {
     console.log(body)
 
     axios.post('https://potluck-capstone-daravy.herokuapp.com/guests', body)
-        .then(() => {
+        .then((res) => {
+            renderGuest(res.data)
             firstNameInput.value = ''
             lastNameInput.value = ''
             phoneInput.value = ''
-            dishSelectedInput.value = ''
+            // dishSelectedInput.value = ''
                 //document.querySelector('#submit') = clicked
                 //alert(`Thank you for your RSVP!`)
-            
+
         })
 
 }
-/*
+
 
 
 
 function getGuests() {
-    axios.get('https://potluck-capstone-daravy.herokuapp.com/guests')//http://localhost:4000/guests
+    axios.get('https://potluck-capstone-daravy.herokuapp.com/guests')//https://potluck-capstone-daravy.herokuapp.com/guests
         .then(res => {
             console.log(res.data)
             const guest = res.data
             //debugger
-            const { firstname, lastname, phonenumber, dishselected } = guest;
+            // const { firstname, lastname, phonenumber, dishselected } = guest;
 
-            firstNameInput.value = firstname
-            lastNameInput.value = lastname
-            phoneInput.value = phonenumber
-            dishSelectedInput.value = dishselected
+            // firstNameInput.value = firstname
+            // lastNameInput.value = lastname
+            // phoneInput.value = phonenumber
+            // dishSelectedInput.value = dishselected
 
         })
 
@@ -213,25 +214,25 @@ function getGuests() {
 
 
 }
-*/
+
+
 function getGuests() {
     guestList.innerHTML = ''
 
     axios.get('https://potluck-capstone-daravy.herokuapp.com/guests/')
         .then(res => {
             res.data.forEach(elem => {
-                let guestCard = `<div class="guest-card">
-                    <h2>${elem.firstname} ${elem.lastname}</h2>
-                    <h3> ${elem.dishselected}</h3>
-                    <button onclick="deleteCard(${elem['guest_id']})">Delete</button>
-                    </div>
+                let guestcard = `<div class="guestcard">
                 `
+                // <h2>${elem.firstname} ${elem.lastname}</h2>
+                // <h3> ${elem.dishselected}</h3>
+                // <button onclick="deleteCard(${elem['guest_id']})">Delete</button>
+                // </div>
 
-                guestList.innerHTML += guestCard
+                //guestList.innerHTML += guestcard
             })
         })
 }
-
 
 
 function deleteCard(id) {
@@ -240,6 +241,24 @@ function deleteCard(id) {
         .then(() => getGuests())
         .catch(err => console.log(err))
 }
+
+
+
+renderGuest = data => {
+    const guest = data[0];
+    let guestcard = 
+    `<div class="guestcard">
+        <h2>${guest.firstname} ${guest.lastname}</h2>
+        <h3> ${guest.dishselected}</h3>
+        <button onclick="deleteCard(${guest['guest_id']})">Delete</button>
+    </div>
+    `
+
+    guestList.innerHTML += guestcard
+}
+
+
+
 
 
 

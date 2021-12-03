@@ -847,12 +847,12 @@ a {
   a.register:hover { color: white; text-decoration:none; font-weight:normal; }
   a.register:active { color: #FFF; text-decoration:none; font-weight:normal; }
   
-.guest_list{
+.guestlist{
   top: 20%;
   left: 50%;
 }
   
-.guest-card {
+.guestcard {
   display: block;
   justify-content: center;
   align-content: center;
@@ -868,12 +868,12 @@ a {
   margin: 20px;
 }
 
-#guest-card > h2 {
+#guestcard > h2 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.guest-card > button {
+.guestcard > button {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
