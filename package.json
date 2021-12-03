@@ -7,10 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/daravyderouen/potluckCapstone.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -33,5 +29,4 @@
     "url": "https://github.com/daravyderouen/potluckCapstone/issues"
   },
   "homepage": "https://github.com/daravyderouen/potluckCapstone#readme"
- 
 }
