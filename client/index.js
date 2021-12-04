@@ -186,7 +186,7 @@ function handleSubmit(e) {
             phoneInput.value = ''
             dishSelectedInput.value = ''
                 //document.querySelector('#submit') = clicked
-                //alert(`Thank you for your RSVP!`)
+                alert(`Thank you for your RSVP!`)
 
         })
 

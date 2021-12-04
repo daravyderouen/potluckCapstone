@@ -60,8 +60,8 @@ module.exports = {
                 select * from guests
                 where firstname = '${firstname}' and lastname = '${lastname}' and phonenumber = '${phonenumber}' and dishselected = '${dishselected}'
                 ;
-                `)//added the select* lines from Cody
-            .then((dbRes) => res.status(200).send(dbRes[0]))//res.sendStatus(200)
+                `)
+            .then((dbRes) => res.status(200).send(dbRes[0]))
             .catch((err) => console.log(err));
     },
     deleteGuest: (req, res) => {
